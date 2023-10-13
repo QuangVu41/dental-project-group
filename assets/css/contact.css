@@ -1,0 +1,25 @@
+.backgroundColor{
+    width: 100%;
+    height: 100rem;
+    background-color: #10375C;
+    margin: 0rem auto;
+}
+
+h1{
+    width: 100%;
+    color: white;
+    font-size: 70px;
+    font-family: Sora;
+    font-weight: 600;
+    line-height: 80px;
+    word-wrap: break-word
+}
+
+.main-content{
+    display: flex;
+    padding-top: 25rem;
+}
+
+.content{
+    flex-basis: 56%;
+}
