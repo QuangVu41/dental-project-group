@@ -5,8 +5,34 @@
     margin: 0rem auto;
 }
 
+.main-content{
+    display: flex;
+    padding-top: 20rem;
+}
+
+.content{
+    flex-basis: 56%;
+}
+.image{
+    flex-basis: 44%;
+}
+
+p{
+    display: flex;
+    padding-left: 15rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    color: #C9D2DA;
+    font-family: Sora;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+}
+
 h1{
-    width: 100%;
+    padding-left: 15rem;
+    width: 130%;
     color: white;
     font-size: 70px;
     font-family: Sora;
@@ -15,11 +41,20 @@ h1{
     word-wrap: break-word
 }
 
-.main-content{
-    display: flex;
-    padding-top: 25rem;
+.gridView{
+    display: grid;
+    grid-template-columns: 60% auto;
 }
 
-.content{
-    flex-basis: 56%;
+.bookOnline{
+    padding-left: 15rem;    
+    margin-left: 15rem;
+    background: #2E80CE;
+    border-radius: 30px;
+    height: 4rem;
+    width: 1rem;
+    text-align: left;
+    color: white;
 }
+
+
