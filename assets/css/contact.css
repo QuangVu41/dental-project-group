@@ -1,6 +1,6 @@
 .backgroundColor{
     width: 100%;
-    height: 100rem;
+    height: 150rem;
     background-color: #10375C;
     margin: 0rem auto;
 }
@@ -12,9 +12,6 @@
 
 .content{
     flex-basis: 56%;
-}
-.image{
-    flex-basis: 44%;
 }
 
 p{
@@ -47,14 +44,47 @@ h1{
 }
 
 .bookOnline{
-    padding-left: 15rem;    
-    margin-left: 15rem;
+    display: flex;
     background: #2E80CE;
     border-radius: 30px;
-    height: 4rem;
-    width: 1rem;
-    text-align: left;
-    color: white;
+    height: 5rem;
+    width: 15rem;
+    color: #C9D2DA;
+    font-size: 15px;
+    align-items: center;
+    padding-left: 30px;
 }
 
+.content2{
+    display: flex;
+    padding-left: 5rem;
+    color: #C9D2DA;
+    font-family: Sora;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 50px;
+}
+
+.image{
+    flex-basis: 44%;
+    padding-top: 20rem;
+}
+
+.image1{
+    width: 50%; 
+    height: 100%; 
+    border-radius: 6px
+}
+
+.image2{
+    width: 35%; 
+    height: 90%; 
+    border-radius: 1px; 
+    padding-bottom: 10%;
+}
+
+.Form{
+    padding-top: 20rem;
+}
 
