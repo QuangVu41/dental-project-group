@@ -88,3 +88,21 @@ h1{
     padding-top: 20rem;
 }
 
+h2{
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: 50px;
+    font-family: Sora;
+    font-weight: 600;
+    line-height: 80px;
+    word-wrap: break-word
+}
+
+.textForm{
+    color: white;
+    font-family: Sora;   
+    word-wrap: break-word;
+}
+
+
