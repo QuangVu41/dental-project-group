@@ -43,34 +43,24 @@
                     <img class="image2" src="./assets/img_contact/Rectangle 8.png" />
                 </div>  
             </div>
-            <hr style="margin-top: 10rem; margin-bottom: -10rem;">
+            <hr style="margin-top: 10rem; margin-bottom: -10rem; color: white;">
             <div class="Form">
                 <h2>Đăng ký online với chúng tôi</h2>
                 <form action="#" method="post">
                     <div class="row">
                         <div class="col-sm-6">
-                            <div class="mb-3">
+                            <h3>Thông tin khách hàng</h3>
+                            <div class="mb-3 itemForm">
                                 <label for="tenDangNhap" class="form-label textForm">Họ và tên</label> 
                                 <input type="text" class="form-control" name="hoVaTen" required="required">
                             </div>
-                            <div class="mb-3">
+                            <div class="mb-3 itemForm">
                                 <label for="matKhau" class="form-label textForm">Số điện thoại</label> 
                                 <input type="tel" class="form-control" name="soDienThoai" required="required">
                             </div>
-                            <div class="mb-3">
-                                <label for="matKhauNhapLai" class="form-label" >Nhập lại
-                                    mật khẩu<span class="red">*</span> <span id="msg" class="red" ></span>
-                                </label> <input type="password" class="form-control" id="matKhauNhapLai"
-                                    name="matKhauNhapLai" required="required" onkeyup="kiemTraMatKhau()">
-                            </div>
-                            <hr />
-                            <h3>Thông tin khách hàng</h3>
-                            <div class="mb-3">
-                                <label for="hoVaTen" class="form-label">Họ và tên</label> <input
-                                    type="text" class="form-control" id="hoVaTen" name="hoVaTen" value="">
-                            </div>
-                            <div class="mb-3">
-                                <label for="gioiTinh" class="form-label">Giới tính</label> <select
+                            <div class="mb-3 itemForm">
+                                <label for="gioiTinh" class="form-label textForm">Giới tính</label> 
+                                <select
                                     class="form-control" id="gioiTinh" name="gioiTinh">
                                     <option></option>
                                     <option value="Nam"  >Nam</option>
@@ -78,41 +68,43 @@
                                     <option value="Khác"  >Khác</option>
                                 </select>
                             </div>
-                            <div class="mb-3">
-                                <label for="ngaySinh" class="form-label">Ngày sinh</label> <input
-                                    type="date" class="form-control" id="ngaySinh" name="ngaySinh" value="">
-                            </div>
                         </div>
                         <div class="col-sm-6">
-                            <h3>Địa chỉ</h3>
-                            <div class="mb-3">
-                                <label for="diaChiKhachHang" class="form-label">Địa chỉ
-                                    khách hàng</label> <input type="text" class="form-control"
-                                    id="diaChiKhachHang" name="diaChiKhachHang" value="">
+                            <h3>Thông Tin Sơ Bộ Đặt Lịch</h3>
+                            <div class="mb-3 itemForm">
+                                <label for="coSo" class="form-label textForm">Cơ sở</label> 
+                                <select
+                                    class="form-control" id="coSo" name="coSo">
+                                    <option></option>
+                                    <option value="cs1">Cơ sở 1</option>
+                                    <option value="cs2">Cơ sở 2</option>
+                                    <option value="cs3">Cơ sở 3</option>
+                                </select>
                             </div>
-                            
-                            <div class="mb-3">
-                                <label for="dienThoai" class="form-label">Điện thoại</label> <input
-                                    type="tel" class="form-control" id="dienThoai" name="dienThoai" value="">
+                            <div class="mb-3 itemForm">
+                                <label for="thoiGianDatLich" class="form-label textForm">Thời gian đặt lịch</label> 
+                                <input type="date" class="form-control" name="thoiGianDatLich" value="">
                             </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email</label> <input
-                                    type="email" class="form-control" id="email" name="email"  value="">
+                            <div class="mb-3 itemForm">
+                                <label for="loaiDichVu" class="form-label textForm">Loại dịch vụ</label> 
+                                <select
+                                    class="form-control" id="loaiDichVu" name="loaiDichVu">
+                                    <option></option>
+                                    <option value="trongRang">Trồng răng</option>
+                                    <option value="rangSu">Răng sứ</option>
+                                    <option value="niengRang">Niềng răng</option>
+                                    <option value="khac">Khác</option>
+                                </select>
                             </div>
-                            <hr />
-                            <div class="mb-3">
-                                <label for="dongYDieuKhoan" class="form-label">Đồng ý với
-                                    <a>điều khoản của công ty </a><span id="red">*</span>
-                                </label> <input type="checkbox" class="form-check-input"
-                                    id="dongYDieuKhoan" name="dongYDieuKhoan" required="required" onchange="xuLyChonDongY()">
+                            <div class="mb-3 itemForm">
+                                <label for="dongYDieuKhoan" class="form-label"><a href="#">Đồng ý với điều khoản của công ty </a></label> 
+                                <input type="checkbox" class="form-check-input" id="dongYDieuKhoan" name="dongYDieuKhoan" required="required">
                             </div>
-                            <div class="mb-3">
-                                <label for="dongYNhanMail" class="form-label">Đồng ý nhận
-                                    email</label> <input type="checkbox" class="form-check-input"
-                                    id="dongYNhanMail" name="dongYNhanMail">
+                            <div class="mb-3 itemForm">
+                                <label for="dongYNhanMail" class="form-label"><a href="#">Đồng ý nhận email</a></label>
+                                <input type="checkbox" class="form-check-input" id="dongYNhanMail" name="dongYNhanMail">
                             </div>
-                            <input class="btn btn-primary form-control" type="submit"
-                                value="Đăng Ký" name="submit" id="submit" style="visibility: hidden;" />
+                            <button type="button" class="btn btn-primary buttonForm" name="submit">Gửi thông tin</button>
                         </div>
                     </div>
                 </form>

@@ -1,6 +1,6 @@
 .backgroundColor{
     width: 100%;
-    height: 150rem;
+    height: 170rem;
     background-color: #10375C;
     margin: 0rem auto;
 }
@@ -48,7 +48,7 @@ h1{
     background: #2E80CE;
     border-radius: 30px;
     height: 5rem;
-    width: 15rem;
+    width: 16rem;
     color: #C9D2DA;
     font-size: 15px;
     align-items: center;
@@ -88,6 +88,12 @@ h1{
     padding-top: 20rem;
 }
 
+.itemForm{
+    margin-top: 5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
 h2{
     text-align: center;
     width: 100%;
@@ -104,5 +110,29 @@ h2{
     font-family: Sora;   
     word-wrap: break-word;
 }
+
+.buttonForm{
+    margin-left: 50rem;
+    width: 10rem;
+    height: 4rem;
+}
+
+h3{
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: 30px;
+    font-family: Sora;
+    font-weight: 600;
+    line-height: 80px;
+    word-wrap: break-word
+}
+
+a{
+    font-family: Sora;
+    color: white;
+}
+
+
 
 
