@@ -1,8 +1,13 @@
 .backgroundColor{
     width: 100%;
-    height: 170rem;
+    height: 250rem;
     background-color: #10375C;
     margin: 0rem auto;
+}
+
+.gridView1{
+    display: grid;
+    grid-template-columns: 60% auto;
 }
 
 .main-content{
@@ -38,9 +43,15 @@ h1{
     word-wrap: break-word
 }
 
-.gridView{
-    display: grid;
-    grid-template-columns: 60% auto;
+h3{
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: 30px;
+    font-family: Sora;
+    font-weight: 600;
+    line-height: 80px;
+    word-wrap: break-word
 }
 
 .bookOnline{
@@ -78,10 +89,43 @@ h1{
 }
 
 .image2{
-    width: 35%; 
-    height: 90%; 
+    width: 40%; 
+    height: 80%; 
     border-radius: 1px; 
-    padding-bottom: 10%;
+}
+
+.girdView2{
+    display: grid;
+    grid-template-columns: 25% 25% 25% auto;
+    padding-top: 10rem;
+}
+
+.imageDentis{
+    margin-left: 4rem;
+    width: 30rem; 
+    height: 40rem; 
+    border-radius: 6px;
+    background-color: white;
+}
+
+.dentisName{
+    text-align: center; 
+    color: whitesmoke; 
+    font-size: 16px; 
+    font-family: Sora; 
+    font-weight: 400; 
+    line-height: 28px; 
+    word-wrap: break-word
+}
+
+.dentisContent{
+    text-align: center; 
+    color: #575F66; 
+    font-size: 14px; 
+    font-family: Sora; 
+    font-weight: 300; 
+    line-height: 26px; 
+    word-wrap: break-word
 }
 
 .Form{
@@ -93,6 +137,7 @@ h1{
     padding-left: 10rem;
     padding-right: 10rem;
 }
+
 
 h2{
     text-align: center;
@@ -115,17 +160,6 @@ h2{
     margin-left: 50rem;
     width: 10rem;
     height: 4rem;
-}
-
-h3{
-    text-align: center;
-    width: 100%;
-    color: white;
-    font-size: 30px;
-    font-family: Sora;
-    font-weight: 600;
-    line-height: 80px;
-    word-wrap: break-word
 }
 
 a{
