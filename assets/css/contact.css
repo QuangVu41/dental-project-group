@@ -19,6 +19,12 @@
     flex-basis: 56%;
 }
 
+.secondary-content{
+    padding-left: 15rem; 
+    display: flex; 
+    width: 100%;
+}
+
 p{
     display: flex;
     padding-left: 15rem;
@@ -168,5 +174,104 @@ a{
 }
 
 
+/* Iphone12 Pro  */
+@media screen and (max-width: 391px) {
+    .backgroundColor{
+        width: 390px;
+        height: auto;
+        background-color: #10375C;
+        margin: 0rem auto;
+    }
+    .gridView1{
+        display: flex;
+        width: 390px;
+    }
+    
+    .main-content{
+        display: flex;
+        padding-top: 15rem;
+        width: 100%;
+    }
+    
+    .content{
+
+    }
+
+    .secondary-content{
+        padding-left: 2rem; 
+        display: flex; 
+        width: 100%;
+    }
+    
+    p{
+        display: flex;
+        padding-left: 2rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        color: #C9D2DA;
+        font-family: Sora;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 30px;
+    }
+    
+    h1{
+        padding-left: 2rem;
+        width: 130%;
+        color: white;
+        font-size: 70px;
+        font-family: Sora;
+        font-weight: 600;
+        line-height: 80px;
+        word-wrap: break-word
+    }
+
+    .content2{
+        display: flex;
+        padding-left: 5rem;
+        color: #C9D2DA;
+        font-family: Sora;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 50px;
+    }
+
+    .image{
+        padding-top: 5rem;
+        display: none;
+    }
+    
+    .girdView2{
+        display: grid;
+        grid-template-columns: 100%;
+        padding-top: 10rem;
+    }
+    
+    .imageDentis{
+        display: grid;
+        width: 100%; 
+        border-radius: 6px;
+        background-color: white;
+        margin-left: 0rem;
+    }
+    .Form{
+        padding-top: 20rem;
+        width: 390px;
+    }
+    .itemForm{
+        margin-top: 5rem;
+        padding-left: 10rem;
+        padding-right: 10rem;
+        width: 100%;
+    }
+    
+    .buttonForm{
+        margin-left: 15rem;
+        width: 10rem;
+        height: 4rem;
+    }
+}
 
 
