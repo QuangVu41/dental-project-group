@@ -1,6 +1,6 @@
 .backgroundColor{
     width: 100%;
-    height: 250rem;
+    height: 270rem;
     background-color: #10375C;
     margin: 0rem auto;
 }
@@ -134,6 +134,52 @@ h3{
     word-wrap: break-word
 }
 
+/* table */
+.divTable{
+    padding-top: 10rem;
+}
+
+table{
+    color: white;
+    text-align: center;
+    border: 1px solid rgb(133, 129, 129);
+    border-collapse: collapse;
+    width: 95%;
+    height: 100%;
+    margin-left: 4rem;
+}
+
+.td1{
+    width: 10%;
+    color: white;
+    text-align: center;
+    border: 1px solid rgb(133, 129, 129);
+    border-collapse: collapse;
+}
+
+.td2{
+    width: 10%;
+    color: white;
+    text-align: center;
+    border: 1px solid rgb(133, 129, 129);
+    border-collapse: collapse;
+}
+.td3{
+    width: 30%;
+    color: white;
+    text-align: center;
+    border: 1px solid rgb(133, 129, 129);
+    border-collapse: collapse;
+}
+.td4{
+    width: 40%;
+    color: white;
+    text-align: center;
+    border: 1px solid rgb(133, 129, 129);
+    border-collapse: collapse;
+}
+
+/* form */
 .Form{
     padding-top: 20rem;
 }
@@ -173,18 +219,17 @@ a{
     color: white;
 }
 
-
-/* Iphone12 Pro  */
-@media screen and (max-width: 391px) {
+/* Ipad mini  */
+@media screen and (max-width: 768px ) {
     .backgroundColor{
-        width: 390px;
+        width: 768px;
         height: auto;
         background-color: #10375C;
         margin: 0rem auto;
     }
     .gridView1{
         display: flex;
-        width: 390px;
+        width: 768px;
     }
     
     .main-content{
@@ -227,6 +272,178 @@ a{
         word-wrap: break-word
     }
 
+    h2{
+        text-align: center;
+        width: 100%;
+        color: white;
+        font-size: 50px;
+        font-family: Sora;
+        font-weight: 600;
+        line-height: 80px;
+        word-wrap: break-word;
+        margin-left: 10rem;
+    }
+
+    .content2{
+        display: flex;
+        padding-left: 5rem;
+        color: #C9D2DA;
+        font-family: Sora;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 50px;
+    }
+
+    .image{
+        padding-top: 5rem;
+        display: none;
+    }
+
+    
+
+    .dentisContent{
+        text-align: center; 
+        color: #575F66; 
+        font-size: 14px; 
+        font-family: Sora; 
+        font-weight: 300; 
+        line-height: 26px; 
+        word-wrap: break-word;
+        margin-bottom: 4rem;
+    }
+    
+    .girdView2{
+        display: grid;
+        grid-template-columns: 100%;
+        padding-top: 10rem;
+    }
+    
+    .imageDentis{
+        display: grid;
+        width: 100%; 
+        height: 80rem;
+        border-radius: 6px;
+        background-color: white;
+        margin-left: 0rem;
+    }
+
+    /* table */
+    .divTable{
+        padding-top: 5rem;
+        margin-right: 20rem;
+    }
+    
+    table{
+        color: white;
+        text-align: center;
+        border: 1px solid rgb(133, 129, 129);
+        border-collapse: collapse;
+        width: 120%;
+        height: 100%;
+        margin-left: 2rem;
+        
+    }
+
+    /* form */
+    .Form{
+        padding-top: 20rem;
+        width: 390px;
+    }
+
+    h3{
+        text-align: center;
+        width: 250%;
+        color: white;
+        font-size: 15px;
+        font-family: Sora;
+        font-weight: 600;
+        line-height: 80px;
+        word-wrap: break-word;
+        margin-left: -5rem;
+    }
+
+    .itemForm{
+        margin-top: 5rem;
+        padding-left: 10rem;
+        padding-right: 10rem;
+        width: 200%;
+    }
+    
+    .buttonForm{
+        margin-left: 15rem;
+        width: 10rem;
+        height: 4rem;
+    }
+}
+
+
+
+/* Iphone12 Pro  */
+@media screen and (max-width: 391px) {
+    .backgroundColor{
+        width: 390px;
+        height: auto;
+        background-color: #10375C;
+        margin: 0rem auto;
+    }
+    .gridView1{
+        display: flex;
+        width: 390px;
+    }
+    
+    .main-content{
+        display: flex;
+        padding-top: 15rem;
+        width: 100%;
+    }
+    
+    .content{
+        
+    }
+
+    .secondary-content{
+        padding-left: 2rem; 
+        display: flex; 
+        width: 100%;
+    }
+    
+    p{
+        display: flex;
+        padding-left: 2rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        color: #C9D2DA;
+        font-family: Sora;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 30px;
+    }
+    
+    h1{
+        padding-left: 2rem;
+        width: 130%;
+        color: white;
+        font-size: 70px;
+        font-family: Sora;
+        font-weight: 600;
+        line-height: 80px;
+        word-wrap: break-word
+    }
+
+    h2{
+        text-align: center;
+        width: 75%;
+        color: white;
+        font-size: 50px;
+        font-family: Sora;
+        font-weight: 600;
+        line-height: 80px;
+        word-wrap: break-word;
+        margin-left: 3rem;
+    }
+
     .content2{
         display: flex;
         padding-left: 5rem;
@@ -248,6 +465,18 @@ a{
         grid-template-columns: 100%;
         padding-top: 10rem;
     }
+
+    h3{
+        text-align: center;
+        width: 120%;
+        color: white;
+        font-size: 30px;
+        font-family: Sora;
+        font-weight: 600;
+        line-height: 80px;
+        word-wrap: break-word
+    }
+    
     
     .imageDentis{
         display: grid;
@@ -256,6 +485,33 @@ a{
         background-color: white;
         margin-left: 0rem;
     }
+
+    .dentisContent{
+        text-align: center; 
+        color: #575F66; 
+        font-size: 14px; 
+        font-family: Sora; 
+        font-weight: 300; 
+        line-height: 26px; 
+        word-wrap: break-word
+    }
+
+    /* table */
+    .divTable{
+        padding-top: 5rem;
+    }
+    
+    table{
+        color: white;
+        text-align: center;
+        border: 1px solid rgb(133, 129, 129);
+        border-collapse: collapse;
+        width: 90%;
+        height: 100%;
+        margin-left: 2rem;
+    }
+
+    /* form */
     .Form{
         padding-top: 20rem;
         width: 390px;
@@ -273,5 +529,4 @@ a{
         height: 4rem;
     }
 }
-
 
