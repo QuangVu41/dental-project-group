@@ -1,0 +1,134 @@
+/* Main service */
+.main-services {
+    padding: 100px;
+}
+
+.main-services__top {
+    text-align: center;
+}
+
+.main-services__title {
+    color: var(--primary-color);
+}
+
+.main-services__heading {
+    margin-top: 10px;
+}
+
+.main-services__list-content {
+    margin-top: 70px;
+}
+
+.col:nth-child(3n + 1) .main-services__item {
+    background-color: var(--card-color);
+}
+
+.col:nth-child(3n + 2) .main-services__item {
+    background-color: var(--card-color-nd);
+}
+
+.col:nth-child(3n + 3) .main-services__item {
+    background-color: var(--card-color-th);
+}
+
+.main-services__item {
+    padding: 32px;
+    border-radius: 12px;
+}
+
+.main-services__icon-wrap {
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.6rem;
+    color: var(--text-primary-color);
+}
+
+.main-services__item-heading {
+    margin-top: 22px;
+    color: var(--text-primary-color);
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.25; /* 125% */
+    letter-spacing: -1.28px;
+}
+
+.main-services__desc {
+    margin-top: 15px;
+    color: var(--text-primary-color);
+    font-size: 1.8rem;
+    line-height: 1.67; /* 166.667% */
+}
+
+.main-services__more {
+    display: inline-block;
+    margin-top: 18px;
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    line-height: 1.75; /* 175% */
+}
+
+/* Services Call to action */
+.main-services-cta {
+    margin: 100px 0;
+}
+
+.services-cta__inner {
+    padding: 70px 22px;
+    background-color: var(--color-bg-primary);
+    border-radius: 32px;
+}
+
+.services-cta__img {
+    width: 100%;
+    border-radius: 99px 0 99px 0;
+}
+
+.services-cta__heading {
+    color: #fff;
+    font-size: 4.4rem;
+}
+
+.services-cta__desc {
+    color: #fff;
+    text-align: left;
+}
+
+.services-cta__form {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+}
+
+.services-cta__phone,
+.services-cta__name {
+    height: 46px;
+    border-radius: 12px;
+    outline: none;
+    border: 1px solid var(--primary-color);
+    padding: 0 22px;
+    background-color: transparent;
+    color: #fff;
+}
+
+::placeholder {
+    color: #6a8383;
+    font-size: 1.4rem;
+}
+
+.services-cta__submit {
+    height: 46px;
+    border-radius: 12px;
+    color: #fff;
+    border: none;
+    outline: none;
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
