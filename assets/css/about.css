@@ -215,6 +215,17 @@ li{
         width: 30rem;
     
     }
+    .p-style3{
+        color: #48496A;
+        font-size: 2rem;
+        color: black;
+        font-family: Poppins;
+        font-weight: 500;
+        line-height: 25px;
+        word-wrap: break-word;
+        padding-top: 30px;
+        width: 30rem;
+    }
     .img2{
         width: 100%;
         height: 366px;
@@ -254,7 +265,6 @@ li{
     }
     .style{
         display: block;
-        padding-left: 180px;
     }
     .p-style{
         color: #48496A;
@@ -274,19 +284,20 @@ li{
         line-height: 25px;
         word-wrap: break-word;
         padding-top: 30px;
-        padding-left: 1px;
+        padding-left: 60px;
         width: 30rem;
-    
     }
     .p-style3{
         color: #48496A;
         font-size: 2rem;
+        color: black;
         font-family: Poppins;
         font-weight: 500;
         line-height: 25px;
         word-wrap: break-word;
         padding-top: 30px;
-        width: 30rem;   
+        padding-left: 60px;
+        width: 30rem;
     }
     .img2{
         width: 100%;
