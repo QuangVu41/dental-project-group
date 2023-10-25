@@ -5,7 +5,14 @@
 }
 
 :root {
+    --bg-linear: linear-gradient(43deg, #fad961 0%, #f76b1c 100%);
     --bg-light: #f6fbff;
+    --text-radial-gradient: radial-gradient(
+        circle farthest-corner at 10% 20%,
+        rgba(38, 51, 97, 1) 0%,
+        rgba(65, 143, 222, 1) 79%
+    );
+    --decor-color: #fad961;
     --color-bg-primary: #24287f;
     --primary-color: #f9943e;
     --card-color: #f4f1e6;
@@ -46,7 +53,9 @@ select {
     justify-content: center;
     min-width: 150px;
     height: var(--height);
-    background-color: var(--primary-color);
+    background-image: var(--bg-linear);
+    background-repeat: no-repeat;
+    border: 1px solid var(--primary-color);
     border-radius: 99px;
     color: #fff;
     font-size: 1.6rem;
@@ -64,7 +73,11 @@ select {
     top: 0;
     right: 0;
     bottom: 0;
-    background-color: #fff;
+    background-image: radial-gradient(
+        circle 400px at 6.8% 8.3%,
+        rgba(255, 244, 169, 1) 0%,
+        rgba(255, 244, 234, 1) 100.2%
+    );
     width: 0;
     transition: width 0.35s ease-in-out;
 }
@@ -80,7 +93,13 @@ select {
     justify-content: flex-end;
     top: 0;
     right: 0;
-    color: var(--primary-color);
+    color: transparent;
+    background-image: radial-gradient(
+        circle farthest-corner at 10% 20%,
+        rgba(38, 51, 97, 1) 0%,
+        rgba(65, 143, 222, 1) 79%
+    );
+    -webkit-background-clip: text;
     white-space: nowrap;
     overflow: hidden;
     width: 0;
@@ -99,8 +118,8 @@ select {
 }
 
 .btn:hover {
+    border: 1px solid var(--decor-color);
     transform: translateY(-6px);
-    color: var(--primary-color);
     box-shadow: 0 10px 20px var(--box-shadow-color);
 }
 
@@ -122,7 +141,7 @@ select {
     font-weight: 600;
     padding: 0 16px;
     overflow: hidden;
-    transition: color, background-color, transform, box-shadow, 0.35s;
+    transition: color, background, transform, box-shadow, 0.35s;
 }
 
 .btn-exclusive:hover {
@@ -146,7 +165,7 @@ select {
 
 .btn-exclusive:hover::after {
     width: 100%;
-    background-color: var(--primary-color);
+    background-image: var(--bg-linear);
     rotate: -90deg;
 }
 
@@ -279,12 +298,16 @@ select {
     align-items: center;
     column-gap: 8px;
     padding: 8px 12px;
-    color: var(--primary-color);
+    color: transparent;
+    font-weight: 500;
+    background-color: #fad961;
+    -webkit-background-clip: text;
+    background-image: var(--bg-linear);
 }
 
 .header-action__phone:hover {
     text-shadow: 1px 0 0 var(--primary-color);
-    color: var(--primary-color);
+    color: transparent;
 }
 
 .header-action__icon-wrap {
@@ -368,18 +391,102 @@ select {
 }
 
 /* ========== Hero ========== */
+.review {
+    margin: 100px 0;
+}
+
+.review__carousel [data-bs-target] {
+    background-color: var(--primary-color);
+    margin-bottom: 0;
+}
+
+.review__content {
+    align-items: center;
+}
+
+.review__media {
+    position: relative;
+    height: 427px;
+    border-radius: 0 0 999px 999px;
+}
+
+.review__media::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 90%;
+    border-radius: 999px;
+    background-color: var(--card-color);
+    content: "";
+}
+
+.carousel-item:nth-child(2) .review__media::after {
+    background-color: var(--card-color-nd);
+}
+
+.carousel-item:nth-child(3) .review__media::after {
+    background-color: var(--card-color-th);
+}
+
+.review__img {
+    position: relative;
+    z-index: 1;
+    border-radius: inherit;
+    height: 100%;
+    object-fit: cover;
+}
+
+.review__desc {
+    text-align: left;
+}
+
+.review__name {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    margin-top: 34px;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.review__name::before {
+    position: relative;
+    display: inline-block;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: var(--primary-color);
+    border-radius: 1px;
+}
+
+.review__control-next,
+.review__control-prev {
+    opacity: 0;
+}
+
+.review__control-prev:hover,
+.review__control-next:hover {
+    opacity: 0;
+}
+
+/* ========== Hero ========== */
 .hero {
     position: relative;
     padding: 60px 0;
     background-color: #24287f;
     height: calc(100vh - 90px);
     overflow: hidden;
+    background-image: url(../icons/hero-decor.svg);
+    background-repeat: no-repeat;
+    background-position-y: 10%;
 }
 
 .hero::after {
     position: absolute;
     content: url(../icons/hero-decor-02.svg);
-    bottom: -4px;
+    bottom: -7px;
     right: 94px;
 }
 
@@ -392,95 +499,18 @@ select {
     display: block;
 }
 
-.hero-rating {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 140px;
-    padding: 26px 36px;
-    border-radius: 0 99px 99px 99px;
-    overflow: hidden;
-    background-color: var(--card-color);
-    transform-origin: 0% 0%;
-    animation: wave 0.5s;
-}
-
-@keyframes wave {
-    0% {
-        scale: 0;
-        opacity: 0;
-    }
-    100% {
-        scale: 1;
-        opacity: 1;
-    }
-}
-
-.hero-rating__top {
-    display: flex;
-    column-gap: 12px;
-    align-items: center;
-}
-
-.hero-rating__avatar {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-}
-
-.hero-rating__avatar + .hero-rating__avatar {
-    margin-left: -6px;
-}
-
-.hero-rating__qty {
-    color: var(--text-primary-color);
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 1.24; /* 123.81% */
-}
-
-.hero-rating__avatar-wrap {
-    display: flex;
-}
-
-.hero-rating__desc {
-    margin-top: 12px;
-    color: var(--text-primary-color);
-    font-size: 1.6rem;
-    font-weight: 500;
-    line-height: 1.12; /* 112.5% */
-}
-
-.hero-rating__rate {
-    margin-top: 12px;
-    display: flex;
-    align-items: center;
-    column-gap: 12px;
-}
-
-.hero-rating__icon-wrap {
-    display: flex;
-    column-gap: 2px;
-}
-
-.hero-rating__review {
-    color: var(--text-primary-color);
-    font-size: 1.4rem;
-    line-height: 1.12; /* 112.5% */
-}
-
 .hero__img-wrap {
     position: relative;
-    background-image: url(../icons/hero-decor.svg);
+    /* background-image: url(../icons/hero-decor.svg);
     background-repeat: no-repeat;
-    background-position: 48% 50%;
+    background-position: 48% 50%; */
 }
 
 .hero__decor-wrap {
     position: absolute;
     top: 0;
     right: 0;
-    color: var(--primary-color);
+    color: #fad961;
 }
 
 .hero__img {
@@ -534,7 +564,7 @@ select {
 }
 
 .hero-cta__email-link:hover .hero-cta__icon-wrap {
-    background-color: var(--primary-color);
+    background-image: var(--bg-linear);
     border: var(--primary-color);
 }
 
@@ -550,7 +580,8 @@ select {
     height: 46px;
     border-radius: 50%;
     border: 1px solid #fff;
-    transition: background, border, 0.35s;
+    background: transparent;
+    transition: background-image, border, 0.35s;
 }
 
 @keyframes float {
@@ -606,7 +637,7 @@ select {
 
 /* ========== Hero ========== */
 .service {
-    margin: 170px 0;
+    margin: 170px 0 100px;
 }
 
 .service-top {
@@ -621,20 +652,15 @@ select {
     text-align: left;
 }
 
-.service-top__left {
-    flex: 1;
-}
-
 .service__decor-wrap {
     position: absolute;
     top: 0;
     right: 40%;
-    color: var(--primary-color);
+    color: var(--decor-color);
 }
 
 .service-top__right {
     text-align: right;
-    flex: 1;
 }
 
 .service-top__btn {
@@ -687,7 +713,7 @@ select {
 .service-list__title {
     margin-top: 22px;
     color: var(--text-primary-color);
-    font-size: 3rem;
+    font-size: 2.2rem;
     font-weight: 600;
     line-height: 1.25; /* 125% */
     letter-spacing: -1.28px;
@@ -756,7 +782,7 @@ select {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 0 99px;
+    border-radius: 0 99px 0 0;
 }
 
 .stats__left {
@@ -798,7 +824,7 @@ select {
 
 /* ========== Member ========== */
 .member {
-    padding: 100px;
+    padding: 100px 0;
     background-color: var(--bg-light);
 }
 
@@ -896,11 +922,18 @@ select {
 
 /* ========== Work ========== */
 .work {
-    margin-top: 170px;
+    margin-top: 100px;
 }
 
 .work__media {
     position: relative;
+}
+
+.work__media::after {
+    position: absolute;
+    content: url(../icons/decor.svg);
+    top: 0;
+    right: 0;
 }
 
 .work__img-wrap {
@@ -989,14 +1022,14 @@ select {
 
 /* ========== Video ========== */
 .video {
-    margin-top: 170px;
+    margin-top: 100px;
     padding: 116px 0 64px;
-    background-color: var(--card-color-nd);
+    background-color: var(--color-bg-primary);
 }
 
 .video__desc,
 .video__heading {
-    color: var(--text-primary-color);
+    color: #fff;
 }
 
 .video__desc {
@@ -1046,7 +1079,7 @@ select {
 .news__more {
     display: inline-block;
     margin-top: 28px;
-    color: var(--text-primary-color);
+    color: var(--primary-color);
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.56; /* 155.556% */
@@ -1104,7 +1137,7 @@ select {
     );
 }
 
-.col:last-child .news-blog::after {
+.col:nth-child(2) .news-blog::after {
     background-image: linear-gradient(
         to right,
         var(--card-color-nd) 30%,
@@ -1124,7 +1157,7 @@ select {
     border-radius: 0 99px 0 0;
 }
 
-.col:last-child .news-blog {
+.col:nth-child(2) .news-blog {
     background-image: url(../imgs/news-img-02.png);
     background-position: 10% bottom;
     border-radius: 0 0 99px 0;
@@ -1149,7 +1182,9 @@ select {
     --height: 40px;
 
     border-width: 2px;
-    color: var(--text-primary-color);
+    color: transparent;
+    background-image: var(--text-radial-gradient);
+    -webkit-background-clip: text;
     border-color: var(--text-primary-color);
     margin-top: 10px;
 }
@@ -1164,21 +1199,21 @@ select {
 
 /* ========== Appointment ========== */
 .appointment {
-    margin: 170px 0;
+    margin: 100px 0;
 }
 
 .appointment__inner {
     background-color: var(--bg-light);
+    background-image: url(../icons/appointment-decor-01.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
 }
 
 .appointment__content {
     position: relative;
     text-align: center;
     padding: 68px;
-    background-image: url(../icons/appointment-decor-01.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
 }
 
 .appointment__content::before {
@@ -1191,7 +1226,7 @@ select {
 .appointment__content::after {
     position: absolute;
     content: url(../icons/appointment-decor-03.svg);
-    bottom: 0;
+    bottom: -7px;
     left: 0;
 }
 
@@ -1308,6 +1343,17 @@ select {
         translate: 0 1px;
         rotate: 50deg;
     }
+}
+
+.footer__content {
+    position: relative;
+}
+
+.footer__content::after {
+    position: absolute;
+    content: url(../icons/decor.svg);
+    top: 0;
+    right: 0;
 }
 
 .footer__title {

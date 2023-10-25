@@ -1,33 +1,30 @@
-
-.wrapper{
+.wrapper {
     max-width: 1200px;
     margin: 0 auto;
-    max-height: 2000px;
 }
-.main-content{
+.main-content {
     display: flex;
     padding-top: 4rem;
 }
-.content{
+.content {
     flex-basis: 60%;
 }
-.content2{
+.content2 {
     flex-basis: 60%;
     padding-left: 50px;
 }
-.sidebar{
-    flex-basis: 40%;    
+.sidebar {
+    flex-basis: 40%;
 }
-.img{
+.img {
     width: 60rem;
     height: 68rem;
-
 }
-.img2{
+.img2 {
     width: 550px;
     height: 366px;
 }
-.p-content{
+.p-content {
     color: black;
     font-family: Poppins;
     font-size: 2rem;
@@ -37,16 +34,16 @@
     width: 65rem;
     padding-top: 1.5rem;
 }
-.container{
+.container {
     display: flex;
 }
-.style{
+.style {
     display: flex;
 }
-.container-style{
+.container-style {
     padding-top: 20px;
 }
-h1{
+h1 {
     color: cornflowerblue;
     font-family: Poppins;
     font-size: 2.5rem;
@@ -55,23 +52,23 @@ h1{
     line-height: 3.875rem;
     width: 50rem;
 }
-.h1-style{
+.h1-style {
     color: cornflowerblue;
     font-family: Poppins;
     font-size: 2.5rem;
     font-style: normal;
     width: 100rem;
 }
- h2{
+h2 {
     color: cornflowerblue;
-     font-family: Poppins;
+    font-family: Poppins;
     font-size: 2.5rem;
     font-style: normal;
     font-weight: 900;
     line-height: 3.875rem;
     width: 50rem;
-        }
-h4{
+}
+h4 {
     color: chartreuse;
     font-family: Poppins;
     font-size: 2.2rem;
@@ -80,8 +77,8 @@ h4{
     line-height: 3.875rem;
     width: 50rem;
 }
-.p-style{
-    color: #48496A;
+.p-style {
+    color: #48496a;
     font-size: 2.5rem;
     font-family: Poppins;
     font-weight: 500;
@@ -90,8 +87,8 @@ h4{
     padding-top: 30px;
     width: 30rem;
 }
-.p-style3{
-    color: #48496A;
+.p-style3 {
+    color: #48496a;
     font-size: 2rem;
     color: black;
     font-family: Poppins;
@@ -101,7 +98,7 @@ h4{
     padding-top: 30px;
     width: 30rem;
 }
-.p-style-content{
+.p-style-content {
     color: deepskyblue;
     font-size: 3rem;
     font-family: Poppins;
@@ -111,8 +108,8 @@ h4{
     padding-top: 30px;
     width: 18rem;
 }
-.p-style1{
-    color: #48496A;
+.p-style1 {
+    color: #48496a;
     font-size: 2rem;
     font-family: Poppins;
     font-weight: 500;
@@ -122,24 +119,23 @@ h4{
     padding-left: 50px;
     width: 30rem;
     color: black;
-
 }
-table{
+table {
     border: 1px solid blue;
     border-collapse: collapse;
     width: 100%;
     font-family: Poppins;
     line-height: 40px;
 }
-td{
-    border: 1px solid blue ;
+td {
+    border: 1px solid blue;
     text-align: center;
     color: black;
     font-family: Poppins;
     font-size: 2rem;
 }
-th{
-    border: 1px solid blue ;
+th {
+    border: 1px solid blue;
     text-align: center;
     color: black;
     font-size: 2rem;
@@ -147,18 +143,18 @@ th{
     background-color: blue;
     color: white;
 }
-li{
+li {
     font-family: Poppins;
     color: black;
     font-size: 2rem;
 }
 /* Iphone 12 Pro */
 @media screen and (max-width: 390px) {
-    .main-content{
+    .main-content {
         display: block;
         padding-top: 4rem;
     }
-    .p-content{
+    .p-content {
         color: #656689;
         font-family: Poppins;
         font-size: 2rem;
@@ -168,14 +164,14 @@ li{
         width: 100%;
         padding-top: 1.5rem;
     }
-    .h1-style{
+    .h1-style {
         color: cornflowerblue;
         font-family: Poppins;
         font-size: 2.5rem;
         font-style: normal;
         width: 100%;
     }
-    h1{
+    h1 {
         color: cornflowerblue;
         font-family: Poppins;
         font-size: 2.5rem;
@@ -184,11 +180,11 @@ li{
         line-height: 3.875rem;
         width: 100%;
     }
-    .style{
+    .style {
         display: block;
     }
-    .p-style{
-        color: #48496A;
+    .p-style {
+        color: #48496a;
         font-size: 2.5rem;
         font-family: Poppins;
         font-weight: 500;
@@ -197,8 +193,8 @@ li{
         padding-top: 30px;
         width: 30rem;
     }
-    .p-style1{
-        color: #48496A;
+    .p-style1 {
+        color: #48496a;
         font-size: 2rem;
         font-family: Poppins;
         font-weight: 500;
@@ -207,10 +203,9 @@ li{
         padding-top: 30px;
         padding-left: 0;
         width: 30rem;
-    
     }
-    .p-style3{
-        color: #48496A;
+    .p-style3 {
+        color: #48496a;
         font-size: 2rem;
         color: black;
         font-family: Poppins;
@@ -220,18 +215,18 @@ li{
         padding-top: 30px;
         width: 30rem;
     }
-    .img2{
+    .img2 {
         width: 100%;
         height: 366px;
     }
 }
 /* Ipad Mini */
 @media screen and (max-width: 768px) {
-    .main-content{
+    .main-content {
         display: block;
         padding-top: 4rem;
     }
-    .p-content{
+    .p-content {
         color: #656689;
         font-family: Poppins;
         font-size: 2rem;
@@ -241,14 +236,14 @@ li{
         width: 100%;
         padding-top: 1.5rem;
     }
-    .h1-style{
+    .h1-style {
         color: cornflowerblue;
         font-family: Poppins;
         font-size: 2.5rem;
         font-style: normal;
         width: 100%;
     }
-    h1{
+    h1 {
         color: cornflowerblue;
         font-family: Poppins;
         font-size: 2.5rem;
@@ -257,11 +252,11 @@ li{
         line-height: 3.875rem;
         width: 100%;
     }
-    .style{
+    .style {
         display: block;
     }
-    .p-style{
-        color: #48496A;
+    .p-style {
+        color: #48496a;
         font-size: 2.5rem;
         font-family: Poppins;
         font-weight: 500;
@@ -270,8 +265,8 @@ li{
         padding-top: 30px;
         width: 30rem;
     }
-    .p-style1{
-        color: #48496A;
+    .p-style1 {
+        color: #48496a;
         font-size: 2rem;
         font-family: Poppins;
         font-weight: 500;
@@ -281,8 +276,8 @@ li{
         padding-left: 60px;
         width: 30rem;
     }
-    .p-style3{
-        color: #48496A;
+    .p-style3 {
+        color: #48496a;
         font-size: 2rem;
         color: black;
         font-family: Poppins;
@@ -293,7 +288,7 @@ li{
         padding-left: 60px;
         width: 30rem;
     }
-    .img2{
+    .img2 {
         width: 100%;
         height: 366px;
     }
