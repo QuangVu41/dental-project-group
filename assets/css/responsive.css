@@ -155,20 +155,16 @@
         position: relative;
         z-index: 1;
         width: 100%;
+        display: block;
         object-fit: contain;
     }
 
     .hero {
-        height: auto;
         background-position-y: 100%;
     }
 
     .hero__media {
         order: 2;
-    }
-
-    .hero__img-wrap {
-        top: 88px;
     }
 
     .review__media {
@@ -196,6 +192,7 @@
 
     .service__decor-wrap {
         right: 10%;
+        top: 36px;
     }
 
     .service-top__right {

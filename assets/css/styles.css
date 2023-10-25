@@ -474,9 +474,8 @@ select {
 /* ========== Hero ========== */
 .hero {
     position: relative;
-    padding: 60px 0;
+    padding: 60px 0 0;
     background-color: #24287f;
-    height: calc(100vh - 90px);
     overflow: hidden;
     background-image: url(../icons/hero-decor.svg);
     background-repeat: no-repeat;
@@ -488,6 +487,14 @@ select {
     content: url(../icons/hero-decor-02.svg);
     bottom: -7px;
     right: 94px;
+}
+
+.hero__row {
+    align-items: flex-end;
+}
+
+.hero__col-nd {
+    align-self: flex-start;
 }
 
 .hero__content {
@@ -517,6 +524,7 @@ select {
     position: relative;
     width: 100%;
     z-index: 1;
+    display: block;
 }
 
 .hero__img:nth-child(2) {

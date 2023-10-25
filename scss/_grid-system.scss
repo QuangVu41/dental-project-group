@@ -118,7 +118,7 @@ $grid-gutters-width: 30px !default;
 
     @include make-media-query($dimension, $is-xs) {
         .container {
-            width: $max-width;
+            max-width: $max-width;
         }
 
         @include make-row-columns($infix);
