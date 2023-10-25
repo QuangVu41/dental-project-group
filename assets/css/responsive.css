@@ -3,6 +3,9 @@
 
 /* `sm` applies to x-small devices (portrait phones, less than 576px) */
 
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
 /* PC */
 @media (min-width: 992px) {
     .hide-on-pc {

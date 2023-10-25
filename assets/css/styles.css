@@ -713,7 +713,7 @@ select {
 .service-list__title {
     margin-top: 22px;
     color: var(--text-primary-color);
-    font-size: 3rem;
+    font-size: 2.2rem;
     font-weight: 600;
     line-height: 1.25; /* 125% */
     letter-spacing: -1.28px;
