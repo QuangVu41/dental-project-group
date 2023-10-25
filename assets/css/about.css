@@ -2,12 +2,6 @@
     max-width: 1200px;
     margin: 0 auto;
 }
-.menu {
-    color: white;
-    background-image: url(https://phongkhamphapanh.com/wp-content/uploads/2020/04/dichvu-ptb.jpg);
-    background-position: center center;
-    height: 15rem;
-}
 .main-content {
     display: flex;
     padding-top: 4rem;
