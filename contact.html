@@ -103,8 +103,245 @@
         <!-- Styles -->
         <link rel="stylesheet" href="./assets/css/contact.css" />
         <link rel="stylesheet" href="./assets/css/styles.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
     </head>
     <body>
+        <!-- PC Header -->
+        <div class="header fixed">
+            <div class="header__inner">
+                <!-- Tablet and mobile menubar -->
+                <label for="menu-checkbox" class="header__menubar hide-on-pc">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="1em"
+                        viewBox="0 0 512 512"
+                        fill="currentColor"
+                    >
+                        <path
+                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                        />
+                    </svg>
+                </label>
+
+                <!-- Logo -->
+                <a href="./">
+                    <div class="logo">
+                        <span class="logo__circle"></span>
+                        <span class="logo__text">
+                            <span class="logo__brand">shine</span>
+                            <span class="logo__brand logo__brand--small">
+                                smile
+                            </span>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Navbar -->
+                <nav class="navbar">
+                    <ul class="navbar__list">
+                        <li>
+                            <a href="./" class="navbar__link">Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="services.html" class="navbar__link"
+                                >Dịch vụ</a
+                            >
+                        </li>
+                        <li>
+                            <a href="about.html" class="navbar__link"
+                                >Giới thiệu</a
+                            >
+                        </li>
+                        <li>
+                            <a href="contact.html" class="navbar__link"
+                                >Liên hệ</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Action -->
+                <div class="header-action">
+                    <a href="#!" class="header-action__phone">
+                        <div class="header-action__icon-wrap">
+                            <svg
+                                class="header-action__icon"
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="1em"
+                                viewBox="0 0 512 512"
+                                fill="currentColor"
+                            >
+                                <path
+                                    d="M347.1 24.6c7.7-18.6 28-28.5 47.4-23.2l88 24C499.9 30.2 512 46 512 64c0 247.4-200.6 448-448 448c-18 0-33.8-12.1-38.6-29.5l-24-88c-5.3-19.4 4.6-39.7 23.2-47.4l96-40c16.3-6.8 35.2-2.1 46.3 11.6L207.3 368c70.4-33.3 127.4-90.3 160.7-160.7L318.7 167c-13.7-11.2-18.4-30-11.6-46.3l40-96z"
+                                />
+                            </svg>
+                        </div>
+                        <span class="header-action__number"
+                            >(+84) 456-7890</span
+                        >
+                    </a>
+                    <a href="signin.html" class="btn header-action__signup">
+                        <span class="text-effect" data-text="Đăng nhập"
+                            >Đăng nhập</span
+                        >
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile/tablet header -->
+        <header class="motab-header hide-on-pc">
+            <input
+                type="checkbox"
+                name=""
+                id="menu-checkbox"
+                class="menu-checkbox"
+                hidden
+            />
+
+            <!-- Overlay -->
+            <label for="menu-checkbox" class="menu-overlay"></label>
+
+            <!-- Menu content -->
+            <div class="menu-drawer">
+                <header class="menu-drawer__header">
+                    <!-- Logo -->
+                    <a href="/">
+                        <div class="logo">
+                            <span class="logo__circle"></span>
+                            <span class="logo__text">
+                                <span class="logo__brand">shine</span>
+                                <span class="logo__brand logo__brand--small">
+                                    smile
+                                </span>
+                            </span>
+                        </div>
+                    </a>
+
+                    <label for="menu-checkbox" class="menu-drawer__icon-wrap">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="1em"
+                            viewBox="0 0 512 512"
+                            fill="currentColor"
+                        >
+                            <path
+                                d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"
+                            />
+                        </svg>
+                    </label>
+                </header>
+
+                <!-- Navbar -->
+                <nav class="menu-drawer__navbar">
+                    <ul class="navbar__list">
+                        <li>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="1em"
+                                viewBox="0 0 576 512"
+                                fill="currentColor"
+                            >
+                                <path
+                                    d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"
+                                />
+                            </svg>
+                            <a href="./" class="navbar__link">Trang chủ</a>
+                        </li>
+                        <li>
+                            <svg
+                                width="22"
+                                height="24"
+                                viewBox="0 0 22 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M20.3598 2.63964C17.9506 -0.556131 14.2772 -0.568132 11.2481 1.10682C11.001 1.24657 10.7219 1.31411 10.4406 1.30222C10.1592 1.29033 9.88633 1.19945 9.65105 1.03931C8.49552 0.245717 7.29036 -0.316477 5.13904 0.207462C0.623408 1.3071 0 4.90379 0 8.99816C0.0797353 12.1602 0.500857 15.3032 1.25551 18.3683C2.11836 22.0168 3.90382 24 5.43354 24C6.96326 24 7.00963 22.2204 7.00963 20.8016C7.00963 19.2009 7.39505 14.8009 10.8642 14.8009C13.5317 14.8009 14.3333 18.4013 14.3333 20.8016C14.3329 23.095 15.1722 24 16.6628 24C19.5267 24 20.9796 15.3938 21.3719 13.1237C21.7642 10.8535 22.9882 6.12569 20.3598 2.63964Z"
+                                    fill="currentColor"
+                                />
+                            </svg>
+
+                            <a href="services.html" class="navbar__link"
+                                >Dịch vụ</a
+                            >
+                        </li>
+                        <li>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="1em"
+                                viewBox="0 0 576 512"
+                                fill="currentColor"
+                            >
+                                <path
+                                    d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm80 256h64c44.2 0 80 35.8 80 80c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16c0-44.2 35.8-80 80-80zm-32-96a64 64 0 1 1 128 0 64 64 0 1 1 -128 0zm256-32H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16s7.2-16 16-16z"
+                                />
+                            </svg>
+                            <a href="about.html" class="navbar__link"
+                                >Giới thiệu</a
+                            >
+                        </li>
+                        <li>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="1em"
+                                viewBox="0 0 512 512"
+                                fill="currentColor"
+                            >
+                                <path
+                                    d="M280 0C408.1 0 512 103.9 512 232c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-101.6-82.4-184-184-184c-13.3 0-24-10.7-24-24s10.7-24 24-24zm8 192a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm-32-72c0-13.3 10.7-24 24-24c75.1 0 136 60.9 136 136c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-48.6-39.4-88-88-88c-13.3 0-24-10.7-24-24zM117.5 1.4c19.4-5.3 39.7 4.6 47.4 23.2l40 96c6.8 16.3 2.1 35.2-11.6 46.3L144 207.3c33.3 70.4 90.3 127.4 160.7 160.7L345 318.7c11.2-13.7 30-18.4 46.3-11.6l96 40c18.6 7.7 28.5 28 23.2 47.4l-24 88C481.8 499.9 466 512 448 512C200.6 512 0 311.4 0 64C0 46 12.1 30.2 29.5 25.4l88-24z"
+                                />
+                            </svg>
+                            <a href="contact.html" class="navbar__link"
+                                >Liên hệ</a
+                            >
+                        </li>
+                        <li class="navbar__item">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="1em"
+                                viewBox="0 0 512 512"
+                                fill="currentColor"
+                            >
+                                <path
+                                    d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
+                                />
+                            </svg>
+
+                            <a href="#!" class="navbar__help"
+                                >Trợ giúp và thông tin</a
+                            >
+                        </li>
+                        <li>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="1em"
+                                viewBox="0 0 512 512"
+                                fill="currentColor"
+                            >
+                                <path
+                                    d="M352 96l64 0c17.7 0 32 14.3 32 32l0 256c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l64 0c53 0 96-43 96-96l0-256c0-53-43-96-96-96l-64 0c-17.7 0-32 14.3-32 32s14.3 32 32 32zm-9.4 182.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L242.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l210.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"
+                                />
+                            </svg>
+
+                            <a href="signin.html" class="navbar__signup"
+                                >Đăng nhập</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Images -->
+                <figure class="menu-drawer__img-wrap">
+                    <img
+                        src="./assets/imgs/menu-drawer-img.png"
+                        alt=""
+                        class="menu-drawer__img"
+                    />
+                </figure>
+            </div>
+        </header>
+
         <div class="backgroundColor">
             <div class="gridView1">
                 <div>
@@ -377,6 +614,288 @@
                 </form>
             </div>
         </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="row gy-3">
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <footer class="footer__cta">
+                                <!-- Logo -->
+                                <a href="./">
+                                    <div class="logo">
+                                        <span class="logo__circle"></span>
+                                        <span class="logo__text">
+                                            <span class="logo__brand"
+                                                >shine</span
+                                            >
+                                            <span
+                                                class="logo__brand logo__brand--small"
+                                            >
+                                                smile
+                                            </span>
+                                        </span>
+                                    </div>
+                                </a>
+
+                                <label for="useremail" class="footer__notify">
+                                    Các mẹo hữu ích cung cấp hàng tháng
+                                </label>
+
+                                <form action="" class="footer__newsletter">
+                                    <input
+                                        type="email"
+                                        name=""
+                                        id="useremail"
+                                        class="footer__email-input"
+                                        placeholder=" "
+                                    />
+
+                                    <label
+                                        for="useremail"
+                                        class="footer__floating-label"
+                                        >Enter your email</label
+                                    >
+                                    <button
+                                        type="reset"
+                                        class="footer__submit-btn"
+                                    >
+                                        <svg
+                                            class="footer__submit-icon"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            height="1em"
+                                            viewBox="0 0 512 512"
+                                            fill="currentColor"
+                                        >
+                                            <path
+                                                d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480V396.4c0-4 1.5-7.8 4.2-10.7L331.8 202.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8 17.7 316.6C7.1 311.3 .3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"
+                                            />
+                                        </svg>
+                                    </button>
+                                </form>
+                                <!-- Get in touch -->
+                                <div class="hero-follow">
+                                    <span class="hero-follow__title">
+                                        Liên lạc:
+                                    </span>
+                                    <a href="#!" class="hero-follow__social">
+                                        <svg
+                                            class="hero-follow__icon"
+                                            width="6"
+                                            height="12"
+                                            viewBox="0 0 6 12"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M3.98981 11.9358V6.0302H5.76473L6 3.9517H3.98981L3.9928 2.91132C3.9928 2.3692 4.0477 2.07885 4.87783 2.07885H5.98755V0H4.21224C2.07977 0 1.32931 1.00825 1.32931 2.70405V3.95186H0V6.03055H1.32931V11.8521C1.84718 11.9489 2.38257 12 2.93075 12C3.28487 12 3.63863 11.9786 3.98981 11.9358Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    </a>
+                                    <a href="#!" class="hero-follow__social">
+                                        <svg
+                                            class="hero-follow__icon"
+                                            width="16"
+                                            height="12"
+                                            viewBox="0 0 16 12"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M16 1.42062C15.405 1.66154 14.771 1.82123 14.11 1.89877C14.79 1.524 15.309 0.935077 15.553 0.225231C14.919 0.574154 14.219 0.820615 13.473 0.958154C12.871 0.366462 12.013 0 11.077 0C9.261 0 7.799 1.36062 7.799 3.02862C7.799 3.26862 7.821 3.49938 7.875 3.71908C5.148 3.59631 2.735 2.38985 1.114 0.552C0.831 1.00523 0.665 1.524 0.665 2.08246C0.665 3.13108 1.25 4.06062 2.122 4.59877C1.595 4.58954 1.078 4.44831 0.64 4.22585C0.64 4.23508 0.64 4.24708 0.64 4.25908C0.64 5.73046 1.777 6.95262 3.268 7.23415C3.001 7.30154 2.71 7.33385 2.408 7.33385C2.198 7.33385 1.986 7.32277 1.787 7.28215C2.212 8.48123 3.418 9.36277 4.852 9.39138C3.736 10.1972 2.319 10.6828 0.785 10.6828C0.516 10.6828 0.258 10.6717 0 10.6412C1.453 11.5062 3.175 12 5.032 12C11.068 12 14.368 7.38462 14.368 3.384C14.368 3.25015 14.363 3.12092 14.356 2.99262C15.007 2.56615 15.554 2.03354 16 1.42062Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    </a>
+                                    <a href="#!" class="hero-follow__social">
+                                        <svg
+                                            class="hero-follow__icon"
+                                            width="13"
+                                            height="12"
+                                            viewBox="0 0 13 12"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M0 1.39394C0 0.989891 0.146401 0.656558 0.439189 0.393939C0.731978 0.131309 1.11262 0 1.58108 0C2.04119 0 2.41344 0.129285 2.69788 0.387879C2.99066 0.654545 3.13707 1.00201 3.13707 1.4303C3.13707 1.81818 2.99486 2.14141 2.71042 2.4C2.41764 2.66667 2.03282 2.8 1.55598 2.8H1.54344C1.08333 2.8 0.711072 2.66667 0.426641 2.4C0.142209 2.13333 0 1.79798 0 1.39394ZM0.163127 12V3.90303H2.94884V12H0.163127ZM4.49228 12H7.27799V7.47879C7.27799 7.19595 7.31146 6.97777 7.37838 6.82424C7.49549 6.54949 7.67326 6.31716 7.91168 6.12727C8.1501 5.93737 8.44916 5.84242 8.80888 5.84242C9.74582 5.84242 10.2143 6.45252 10.2143 7.67273V12H13V7.35758C13 6.16161 12.7072 5.25455 12.1216 4.63636C11.536 4.01818 10.7622 3.70909 9.80019 3.70909C8.72104 3.70909 7.88031 4.15758 7.27799 5.05455V5.07879H7.26544L7.27799 5.05455V3.90303H4.49228C4.509 4.16161 4.51737 4.96565 4.51737 6.31515C4.51737 7.66464 4.509 9.55959 4.49228 12Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </footer>
+                        </div>
+
+                        <div class="col-lg-7 offset-lg-1 col-md-6 col-12">
+                            <footer class="footer__content">
+                                <div
+                                    class="row row-cols-lg-3 gy-lg-3 row-cols-md-2 gy-md-3 row-cols-2"
+                                >
+                                    <!-- Col 1 -->
+                                    <div class="col">
+                                        <ul class="footer__list">
+                                            <h4 class="footer__title">Trang</h4>
+                                            <li class="footer__item">
+                                                <a
+                                                    href="#!"
+                                                    class="footer__link"
+                                                    >Trang chủ</a
+                                                >
+                                            </li>
+                                            <li class="footer__item">
+                                                <a
+                                                    href="#!"
+                                                    class="footer__link"
+                                                    >Dịch vụ</a
+                                                >
+                                            </li>
+                                            <li class="footer__item">
+                                                <a
+                                                    href="#!"
+                                                    class="footer__link"
+                                                    >Giới thiệu</a
+                                                >
+                                            </li>
+                                            <li class="footer__item">
+                                                <a
+                                                    href="#!"
+                                                    class="footer__link"
+                                                    >Liên hệ</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- Col 2 -->
+                                    <div class="col">
+                                        <ul class="footer__list">
+                                            <h4 class="footer__title">
+                                                Chúng tôi
+                                            </h4>
+                                            <li class="footer__item">
+                                                <a
+                                                    href="#!"
+                                                    class="footer__link"
+                                                    >Đội ngũ</a
+                                                >
+                                            </li>
+                                            <li class="footer__item">
+                                                <a
+                                                    href="#!"
+                                                    class="footer__link"
+                                                    >Nghề nghiệp</a
+                                                >
+                                            </li>
+                                            <li class="footer__item">
+                                                <a
+                                                    href="#!"
+                                                    class="footer__link"
+                                                    >Blog</a
+                                                >
+                                            </li>
+                                            <li class="footer__item">
+                                                <a
+                                                    href="#!"
+                                                    class="footer__link"
+                                                    >Đánh giá</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- Col 3 -->
+                                    <div class="col">
+                                        <ul class="footer__list">
+                                            <h4 class="footer__title">
+                                                Tài nguyên
+                                            </h4>
+                                            <li class="footer__item">
+                                                <a
+                                                    href="#!"
+                                                    class="footer__link"
+                                                >
+                                                    SEO địa phương</a
+                                                >
+                                            </li>
+                                            <li class="footer__item">
+                                                <a
+                                                    href="#!"
+                                                    class="footer__link"
+                                                    >Quảng cáo Google</a
+                                                >
+                                            </li>
+                                            <li class="footer__item">
+                                                <a
+                                                    href="#!"
+                                                    class="footer__link"
+                                                    >Thiết kế web</a
+                                                >
+                                            </li>
+                                            <li class="footer__item">
+                                                <a
+                                                    href="#!"
+                                                    class="footer__link"
+                                                    >Xây dựng thương hiệu</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- Col 4 -->
+                                    <div class="col">
+                                        <ul class="footer__list">
+                                            <h4 class="footer__title">
+                                                Hỗ trợ
+                                            </h4>
+                                            <li class="footer__item">
+                                                <a
+                                                    href="#!"
+                                                    class="footer__link"
+                                                    >Trung tâm trợ giúp</a
+                                                >
+                                            </li>
+                                            <li class="footer__item">
+                                                <a
+                                                    href="#!"
+                                                    class="footer__link"
+                                                >
+                                                    Thông tin tài khoản</a
+                                                >
+                                            </li>
+                                            <li class="footer__item">
+                                                <a
+                                                    href="#!"
+                                                    class="footer__link"
+                                                >
+                                                    Động cơ cấy ghép</a
+                                                >
+                                            </li>
+                                            <li class="footer__item">
+                                                <a
+                                                    href="#!"
+                                                    class="footer__link"
+                                                    >Liên hệ</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-copyright">
+                    <div class="row">
+                        <div class="col">
+                            <p class="footer-copyright__text">
+                                2021 GDN. Copyright and All rights reserved.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
