@@ -121,3 +121,20 @@
     font-weight: 600;
     cursor: pointer;
 }
+
+.price-list {
+    background-color: var(--card-color);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.price-heading {
+    font-size: 2rem;
+    color: var(--text-primary-color);
+    font-weight: 500;
+}
+
+.price-cost {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}

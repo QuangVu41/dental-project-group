@@ -1180,7 +1180,7 @@ select {
 }
 
 .news-blog__desc {
-    color: var(--text-primary-color);
+    color: var(--primary-color);
     font-size: 1.4rem;
     font-weight: 300;
     line-height: 1.71; /* 171.429% */
@@ -1273,7 +1273,7 @@ select {
 
 .footer__newsletter {
     position: relative;
-    margin-top: 60px;
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1290,6 +1290,13 @@ select {
 
 .footer__newsletter:has(:focus) .footer__submit-icon {
     animation: floating 0.35s infinite alternate;
+}
+
+.footer__notify {
+    margin-top: 40px;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: 600;
 }
 
 .footer__email-input {
