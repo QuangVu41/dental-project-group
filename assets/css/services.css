@@ -3,40 +3,29 @@
     padding: 100px;
 }
 
-.main-services__top {
+.main-services-top {
     text-align: center;
 }
 
-.main-services__title {
+.main-services-title {
     color: var(--primary-color);
 }
 
-.main-services__heading {
+.main-services-heading {
     margin-top: 10px;
 }
 
-.main-services__list-content {
+.main-services-list-content {
     margin-top: 70px;
 }
 
-.col:nth-child(3n + 1) .main-services__item {
+.main-services-item {
+    padding: 32px;
+    border-radius: 12px;
     background-color: var(--card-color);
 }
 
-.col:nth-child(3n + 2) .main-services__item {
-    background-color: var(--card-color-nd);
-}
-
-.col:nth-child(3n + 3) .main-services__item {
-    background-color: var(--card-color-th);
-}
-
-.main-services__item {
-    padding: 32px;
-    border-radius: 12px;
-}
-
-.main-services__icon-wrap {
+.main-services-icon-wrap {
     width: 74px;
     height: 74px;
     border-radius: 50%;
@@ -48,7 +37,7 @@
     color: var(--text-primary-color);
 }
 
-.main-services__item-heading {
+.main-services-item-heading {
     margin-top: 22px;
     color: var(--text-primary-color);
     font-size: 2.6rem;
@@ -57,14 +46,14 @@
     letter-spacing: -1.28px;
 }
 
-.main-services__desc {
+.main-services-desc {
     margin-top: 15px;
     color: var(--text-primary-color);
     font-size: 1.8rem;
     line-height: 1.67; /* 166.667% */
 }
 
-.main-services__more {
+.main-services-more {
     display: inline-block;
     margin-top: 18px;
     color: var(--primary-color);
@@ -77,36 +66,36 @@
     margin: 100px 0;
 }
 
-.services-cta__inner {
+.services-cta-wrapper {
     padding: 70px 22px;
     background-color: var(--color-bg-primary);
     border-radius: 32px;
 }
 
-.services-cta__img {
+.services-cta-img {
     width: 100%;
     border-radius: 99px 0 99px 0;
 }
 
-.services-cta__heading {
+.services-cta-heading {
     color: #fff;
     font-size: 4.4rem;
 }
 
-.services-cta__desc {
+.services-cta-desc {
     color: #fff;
     text-align: left;
 }
 
-.services-cta__form {
+.services-cta-form {
     margin-top: 40px;
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 20px;
 }
 
-.services-cta__phone,
-.services-cta__name {
+.services-cta-phone,
+.services-cta-name {
     height: 46px;
     border-radius: 12px;
     outline: none;
@@ -121,7 +110,7 @@
     font-size: 1.4rem;
 }
 
-.services-cta__submit {
+.services-cta-submit {
     height: 46px;
     border-radius: 12px;
     color: #fff;
