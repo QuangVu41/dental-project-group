@@ -31,9 +31,37 @@ body {
     font-family: "Sora", sans-serif;
 }
 
+/* ========== Animation ========== */
+@keyframes fade-right {
+    from {
+        transform: translateX(200%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-left {
+    from {
+        transform: translateX(-200%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 /* ========== Common ========== */
 a {
     text-decoration: none;
+}
+
+p,
+blockquote {
+    font-family: "Roboto", sans-serif;
 }
 
 button,
@@ -273,6 +301,10 @@ select {
     margin-right: auto;
 }
 
+.navbar {
+    margin-left: auto;
+}
+
 .navbar__list {
     display: flex;
 }
@@ -390,7 +422,7 @@ select {
     }
 }
 
-/* ========== Hero ========== */
+/* ========== Review ========== */
 .review {
     margin: 100px 0;
 }
@@ -474,20 +506,31 @@ select {
 /* ========== Hero ========== */
 .hero {
     position: relative;
-    padding: 60px 0;
+    padding: 60px 0 0;
     background-color: #24287f;
-    height: calc(100vh - 90px);
     overflow: hidden;
-    background-image: url(../icons/hero-decor.svg);
+    /* background-image: url(../icons/hero-decor.svg); */
+    background-image: url(../imgs/hero-img-05.jpeg);
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position-y: 10%;
+    background-position-x: 100%;
+    /* background-position-y: 10%; */
 }
-
+/* 
 .hero::after {
     position: absolute;
     content: url(../icons/hero-decor-02.svg);
     bottom: -7px;
     right: 94px;
+} */
+
+.hero__row {
+    align-items: flex-end;
+}
+
+.hero__col-nd {
+    align-self: flex-start;
+    animation: fade-left ease-out 0.8s;
 }
 
 .hero__content {
@@ -499,6 +542,10 @@ select {
     display: block;
 }
 
+.hero__media {
+    animation: fade-right ease-out 0.8s;
+}
+
 .hero__img-wrap {
     position: relative;
     /* background-image: url(../icons/hero-decor.svg);
@@ -508,7 +555,7 @@ select {
 
 .hero__decor-wrap {
     position: absolute;
-    top: 0;
+    top: -10%;
     right: 0;
     color: #fad961;
 }
@@ -517,6 +564,7 @@ select {
     position: relative;
     width: 100%;
     z-index: 1;
+    display: block;
 }
 
 .hero__img:nth-child(2) {
@@ -534,7 +582,6 @@ select {
 .hero__desc {
     margin-top: 22px;
     color: #fff;
-    font-family: Sora;
     font-size: 1.8rem;
     font-weight: 300;
     line-height: 1.67; /* 166.667% */
@@ -1172,7 +1219,7 @@ select {
 }
 
 .news-blog__desc {
-    color: var(--text-primary-color);
+    color: var(--primary-color);
     font-size: 1.4rem;
     font-weight: 300;
     line-height: 1.71; /* 171.429% */
@@ -1265,7 +1312,7 @@ select {
 
 .footer__newsletter {
     position: relative;
-    margin-top: 60px;
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1282,6 +1329,13 @@ select {
 
 .footer__newsletter:has(:focus) .footer__submit-icon {
     animation: floating 0.35s infinite alternate;
+}
+
+.footer__notify {
+    margin-top: 40px;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: 600;
 }
 
 .footer__email-input {
@@ -1370,7 +1424,7 @@ select {
 
 .footer__link {
     color: #a9b3bb;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 300;
     line-height: 1.86; /* 185.714% */
 }

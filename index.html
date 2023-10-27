@@ -3,7 +3,86 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Shine Smile</title>
+
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./assets/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+
         <!-- Bootstrap -->
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -19,7 +98,13 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Sora:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Animation -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
             rel="stylesheet"
         />
 
@@ -49,7 +134,7 @@
                 </label>
 
                 <!-- Logo -->
-                <a href="/">
+                <a href="./">
                     <div class="logo">
                         <span class="logo__circle"></span>
                         <span class="logo__text">
@@ -65,7 +150,7 @@
                 <nav class="navbar">
                     <ul class="navbar__list">
                         <li>
-                            <a href="/" class="navbar__link">Trang chủ</a>
+                            <a href="./" class="navbar__link">Trang chủ</a>
                         </li>
                         <li>
                             <a href="services.html" class="navbar__link"
@@ -87,7 +172,7 @@
 
                 <!-- Action -->
                 <div class="header-action">
-                    <a href="" class="header-action__phone">
+                    <a href="#!" class="header-action__phone">
                         <div class="header-action__icon-wrap">
                             <svg
                                 class="header-action__icon"
@@ -105,7 +190,7 @@
                             >(+84) 456-7890</span
                         >
                     </a>
-                    <a href="" class="btn header-action__signup">
+                    <a href="signin.html" class="btn header-action__signup">
                         <span class="text-effect" data-text="Đăng nhập"
                             >Đăng nhập</span
                         >
@@ -171,7 +256,7 @@
                                     d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"
                                 />
                             </svg>
-                            <a href="/" class="navbar__link">Trang chủ</a>
+                            <a href="./" class="navbar__link">Trang chủ</a>
                         </li>
                         <li>
                             <svg
@@ -249,7 +334,9 @@
                                 />
                             </svg>
 
-                            <a href="#!" class="navbar__signup">Đăng nhập</a>
+                            <a href="signin.html" class="navbar__signup"
+                                >Đăng nhập</a
+                            >
                         </li>
                     </ul>
                 </nav>
@@ -269,34 +356,8 @@
         <section class="hero">
             <div class="container">
                 <div class="hero__inner">
-                    <div class="row">
-                        <div class="col col-lg-6 col-md-12 col-12 hero__media">
-                            <figure class="hero__img-wrap">
-                                <img
-                                    src="./assets/imgs/hero-img.png"
-                                    alt=""
-                                    class="hero__img"
-                                />
-
-                                <div class="hero__decor-wrap">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="84"
-                                        height="84"
-                                        viewBox="0 0 84 84"
-                                        fill="none"
-                                    >
-                                        <path
-                                            fill-rule="evenodd"
-                                            clip-rule="evenodd"
-                                            d="M46.8882 6.31701L49.848 6.80655L45.4206 33.5746C45.8114 33.7129 46.1875 33.8782 46.547 34.0681L63.1192 14.0694L65.4291 15.9836L48.9102 35.918C49.2105 36.254 49.4836 36.6132 49.727 36.9919L74.4359 27.0909L75.5518 29.8756L50.8796 39.762C51.042 40.5005 51.1072 41.2697 51.0631 42.0529L77.7257 46.8149L77.1983 49.7682L50.3716 44.9769C50.1766 45.4263 49.9446 45.8535 49.6801 46.2555L71.0285 63.4752L69.145 65.8103L47.6062 48.4369C47.2391 48.7065 46.8505 48.9466 46.4443 49.1547L57.0985 75.2096L54.3216 76.3451L43.5613 50.0305C43.274 50.0639 42.9831 50.0828 42.6896 50.0864L38.099 77.8415L35.1392 77.3519L39.7298 49.5968C39.1834 49.4035 38.6657 49.1571 38.1817 48.8648L19.4888 71.4227L17.1788 69.5085L35.9277 46.8831C35.704 46.6021 35.4981 46.3072 35.3114 46.0003L8.71779 56.6566L7.60192 53.8719L34.2281 43.2025C34.1561 42.8311 34.1086 42.4524 34.0871 42.0685L6.31984 37.1092L6.8473 34.156L34.4501 39.0858C34.5521 38.7529 34.6734 38.4298 34.8127 38.1176L13.1035 20.6068L14.987 18.2717L36.5085 35.6311C36.7763 35.3588 37.0617 35.1051 37.3626 34.8716L27.0703 9.70153L29.8471 8.56606L40.032 33.4732C40.8063 33.2298 41.623 33.0953 42.4608 33.085L46.8882 6.31701Z"
-                                            fill="currentColor"
-                                        />
-                                    </svg>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="col col-lg-5 offset-lg-1 col-12 col-sm-12">
+                    <div class="row hero__row gy-md-4 gy-3">
+                        <div class="hero__col-nd col col-lg-6 col-12 col-sm-12">
                             <div class="hero__content">
                                 <h1 class="hero__heading">
                                     Chăm sóc răng miệng đặc biệt dành cho mọi
@@ -314,8 +375,8 @@
                                     <a href="#!" class="btn hero-cta__btn"
                                         ><span
                                             class="text-effect"
-                                            data-text="Book Online"
-                                            >Book Online</span
+                                            data-text="Đặt lịch hẹn"
+                                            >Đặt lịch hẹn</span
                                         ></a
                                     >
 
@@ -332,7 +393,33 @@
                                         >
                                     </a>
                                 </div>
+
+                                <div class="hero__decor-wrap">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="84"
+                                        height="84"
+                                        viewBox="0 0 84 84"
+                                        fill="none"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M46.8882 6.31701L49.848 6.80655L45.4206 33.5746C45.8114 33.7129 46.1875 33.8782 46.547 34.0681L63.1192 14.0694L65.4291 15.9836L48.9102 35.918C49.2105 36.254 49.4836 36.6132 49.727 36.9919L74.4359 27.0909L75.5518 29.8756L50.8796 39.762C51.042 40.5005 51.1072 41.2697 51.0631 42.0529L77.7257 46.8149L77.1983 49.7682L50.3716 44.9769C50.1766 45.4263 49.9446 45.8535 49.6801 46.2555L71.0285 63.4752L69.145 65.8103L47.6062 48.4369C47.2391 48.7065 46.8505 48.9466 46.4443 49.1547L57.0985 75.2096L54.3216 76.3451L43.5613 50.0305C43.274 50.0639 42.9831 50.0828 42.6896 50.0864L38.099 77.8415L35.1392 77.3519L39.7298 49.5968C39.1834 49.4035 38.6657 49.1571 38.1817 48.8648L19.4888 71.4227L17.1788 69.5085L35.9277 46.8831C35.704 46.6021 35.4981 46.3072 35.3114 46.0003L8.71779 56.6566L7.60192 53.8719L34.2281 43.2025C34.1561 42.8311 34.1086 42.4524 34.0871 42.0685L6.31984 37.1092L6.8473 34.156L34.4501 39.0858C34.5521 38.7529 34.6734 38.4298 34.8127 38.1176L13.1035 20.6068L14.987 18.2717L36.5085 35.6311C36.7763 35.3588 37.0617 35.1051 37.3626 34.8716L27.0703 9.70153L29.8471 8.56606L40.032 33.4732C40.8063 33.2298 41.623 33.0953 42.4608 33.085L46.8882 6.31701Z"
+                                            fill="currentColor"
+                                        />
+                                    </svg>
+                                </div>
                             </div>
+                        </div>
+                        <div class="col col-lg-6 col-md-12 col-12 hero__media">
+                            <figure class="hero__img-wrap">
+                                <img
+                                    src="./assets/imgs/hero-img.png"
+                                    alt=""
+                                    class="hero__img"
+                                />
+                            </figure>
                         </div>
                     </div>
                 </div>
@@ -345,10 +432,10 @@
                 <div class="review__inner">
                     <div class="row">
                         <div class="col col-lg-12">
-                            <!-- data-bs-ride="carousel" -->
                             <div
                                 id="carouselExampleIndicators"
                                 class="carousel slide"
+                                data-bs-ride="carousel"
                             >
                                 <div
                                     class="carousel-indicators review__carousel"
@@ -396,21 +483,16 @@
                                                 <h2
                                                     class="section-heading review__heading"
                                                 >
-                                                    Our Reviews
+                                                    Đánh giá của chúng tôi
                                                 </h2>
                                                 <blockquote
                                                     class="section-desc review__desc"
                                                 >
-                                                    “It was very comforting to
-                                                    recieve a text and pics each
-                                                    day about our pets and how
-                                                    they were doing. It was also
-                                                    nice that my pets were in
-                                                    the comfortable environment
-                                                    of their own home and
-                                                    received playfull attention
-                                                    from our pet sitters as
-                                                    well. Thanks so much!”
+                                                    “Tôi không thể giới thiệu:
+                                                    Shine Smile đủ vì họ đã cho
+                                                    tôi một trang web và sự hiện
+                                                    diện trực tuyến để tôi tự
+                                                    hào!”
                                                 </blockquote>
                                                 <span class="review__name"
                                                     >Karla Deras</span
@@ -439,24 +521,20 @@
                                                 <h2
                                                     class="section-heading review__heading"
                                                 >
-                                                    Our Reviews
+                                                    Đánh giá của chúng tôi
                                                 </h2>
                                                 <blockquote
                                                     class="section-desc review__desc"
                                                 >
-                                                    “It was very comforting to
-                                                    recieve a text and pics each
-                                                    day about our pets and how
-                                                    they were doing. It was also
-                                                    nice that my pets were in
-                                                    the comfortable environment
-                                                    of their own home and
-                                                    received playfull attention
-                                                    from our pet sitters as
-                                                    well. Thanks so much!”
+                                                    “Tôi không thể hài lòng hơn
+                                                    với trang web chất lượng mà
+                                                    họ đã phát triển cho tôi.
+                                                    Một đội tuyệt vời! Họ đã
+                                                    giúp tôi ngoài sự mong đợi
+                                                    của tôi!”
                                                 </blockquote>
                                                 <span class="review__name"
-                                                    >Karla Deras</span
+                                                    >Caitlin Batchelor</span
                                                 >
                                             </div>
                                         </div>
@@ -482,24 +560,19 @@
                                                 <h2
                                                     class="section-heading review__heading"
                                                 >
-                                                    Our Reviews
+                                                    Đánh giá của chúng tôi
                                                 </h2>
                                                 <blockquote
                                                     class="section-desc review__desc"
                                                 >
-                                                    “It was very comforting to
-                                                    recieve a text and pics each
-                                                    day about our pets and how
-                                                    they were doing. It was also
-                                                    nice that my pets were in
-                                                    the comfortable environment
-                                                    of their own home and
-                                                    received playfull attention
-                                                    from our pet sitters as
-                                                    well. Thanks so much!”
+                                                    “Nhóm nghiên cứu kỹ lưỡng và
+                                                    giao tiếp rất xuất sắc! Họ
+                                                    đã dành thời gian để hiểu
+                                                    tầm nhìn của tôi. Chúng tôi
+                                                    đã thấy kết quả tuyệt vời!”
                                                 </blockquote>
                                                 <span class="review__name"
-                                                    >Karla Deras</span
+                                                    >Megan King</span
                                                 >
                                             </div>
                                         </div>
@@ -836,7 +909,7 @@
                                     Nha sĩ của chúng tôi
                                 </h2>
                                 <a
-                                    href=""
+                                    href="#!"
                                     class="btn-exclusive member__cta-btn"
                                 >
                                     Đặt lịch hẹn
@@ -1009,15 +1082,16 @@
                         <div class="col col-lg-5 offset-lg-1 col-12 col-md-12">
                             <div class="work__content">
                                 <h2 class="section-heading work__heading">
-                                    How it works
+                                    Hoạt động như thế nào
                                 </h2>
                                 <p class="section-desc work__desc">
-                                    Exceptional dental care for all ages. Your
-                                    great smile begins with a great dentist.
+                                    Chăm sóc răng miệng đặc biệt dành cho mọi
+                                    lứa tuổi. Của bạn nụ cười tuyệt vời bắt đầu
+                                    với một nha sĩ tuyệt vời.
                                 </p>
                                 <div class="work__list">
                                     <div
-                                        class="row row-cols-lg-1 gy-lg-3 row-cols-md-2"
+                                        class="row row-cols-lg-1 gy-lg-3 row-cols-md-2 row-cols-1"
                                     >
                                         <div class="col">
                                             <!-- Work item 1 -->
@@ -1042,19 +1116,18 @@
                                                     <h3
                                                         class="work-item__title"
                                                     >
-                                                        Search doctor
+                                                        Tìm kiếm bác sĩ
                                                     </h3>
                                                     <p class="work-item__desc">
-                                                        Search a doctor by
-                                                        education,
-                                                        qualifications or
-                                                        experience-contact for
-                                                        inquiry.
+                                                        Tìm kiếm bác sĩ bằng
+                                                        cách giáo dục, bằng cấp
+                                                        hoặc kinh nghiệm liên hệ
+                                                        để biết cuộc điều tra.
                                                     </p>
                                                     <a
                                                         href="#!"
                                                         class="work-item__more"
-                                                        >Learn More</a
+                                                        >Tìm hiểu thêm</a
                                                     >
                                                 </div>
                                             </div>
@@ -1086,19 +1159,18 @@
                                                     <h3
                                                         class="work-item__title"
                                                     >
-                                                        Find best doctor
+                                                        Tìm bác sĩ giỏi nhất
                                                     </h3>
                                                     <p class="work-item__desc">
-                                                        Search a doctor by
-                                                        education,
-                                                        qualifications or
-                                                        experience-contact for
-                                                        inquiry.
+                                                        Tìm kiếm bác sĩ bằng
+                                                        cách giáo dục, bằng cấp
+                                                        hoặc kinh nghiệm liên hệ
+                                                        để biết cuộc điều tra.
                                                     </p>
                                                     <a
                                                         href="#!"
                                                         class="work-item__more"
-                                                        >Learn More</a
+                                                        >Tìm hiểu thêm</a
                                                     >
                                                 </div>
                                             </div>
@@ -1145,19 +1217,18 @@
                                                     <h3
                                                         class="work-item__title"
                                                     >
-                                                        Get treatment
+                                                        Nhận điều trị
                                                     </h3>
                                                     <p class="work-item__desc">
-                                                        Search a doctor by
-                                                        education,
-                                                        qualifications or
-                                                        experience-contact for
-                                                        inquiry.
+                                                        Tìm kiếm bác sĩ bằng
+                                                        cách giáo dục, bằng cấp
+                                                        hoặc kinh nghiệm liên hệ
+                                                        để biết cuộc điều tra.
                                                     </p>
                                                     <a
                                                         href="#!"
                                                         class="work-item__more"
-                                                        >Learn More</a
+                                                        >Tìm hiểu thêm</a
                                                     >
                                                 </div>
                                             </div>
@@ -1179,14 +1250,14 @@
                         <div class="row row-cols-lg-2 row-cols-md-1 row-cols-1">
                             <div class="col">
                                 <div class="video__heading section-heading">
-                                    Take back your smile with dentures
+                                    Lấy lại nụ cười bằng răng giả
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="video__desc section-desc">
-                                    If you’re missing multiple teeth due to
-                                    decay, injury, or the natural aging process,
-                                    dentures might be the perfect solution.
+                                    Nếu bạn bị mất nhiều răng do sâu răng, tổn
+                                    thương hoặc quá trình lão hóa tự nhiên, răng
+                                    giả có thể là giải pháp hoàn hảo.
                                 </div>
 
                                 <a href="#!" class="video__more">
@@ -1237,10 +1308,10 @@
                         <div class="col-lg-4">
                             <div class="news__content">
                                 <h2 class="section-heading news__heading">
-                                    Read Latest News & Events.
+                                    Đọc tin tức và sự kiện mới nhất
                                 </h2>
-                                <a href="#!" class="news__more"
-                                    >Read All Blog
+                                <a href="#!" class="news__more">
+                                    Đọc tất cả blog
                                     <svg
                                         width="22"
                                         height="12"
@@ -1274,11 +1345,11 @@
                                         <section class="news-blog">
                                             <div class="news-blog__content">
                                                 <p class="news-blog__desc">
-                                                    Lorem, ipsum dolor.
+                                                    Tháng 1/2023
                                                 </p>
                                                 <h3 class="news-blog__heading">
-                                                    Lorem ipsum dolor sit amet
-                                                    consectetur.
+                                                    17 Slogan Nha Khoa Dễ Nhớ Và
+                                                    Hấp Dẫn
                                                 </h3>
                                                 <a
                                                     href="#!"
@@ -1292,11 +1363,11 @@
                                         <section class="news-blog">
                                             <div class="news-blog__content">
                                                 <p class="news-blog__desc">
-                                                    Lorem, ipsum dolor.
+                                                    Tháng 2/2023
                                                 </p>
                                                 <h3 class="news-blog__heading">
-                                                    Lorem ipsum dolor sit amet
-                                                    consectetur.
+                                                    26 thương hiệu nha khoa tốt
+                                                    nhất
                                                 </h3>
                                                 <a
                                                     href="#!"
@@ -1347,7 +1418,7 @@
                                     lịch
                                 </p>
                                 <a
-                                    href=""
+                                    href="#!"
                                     class="btn-exclusive appointment__cta"
                                 >
                                     Đặt lịch hẹn</a
@@ -1367,7 +1438,7 @@
                         <div class="col-lg-4 col-md-6 col-12">
                             <footer class="footer__cta">
                                 <!-- Logo -->
-                                <a href="/">
+                                <a href="./">
                                     <div class="logo">
                                         <span class="logo__circle"></span>
                                         <span class="logo__text">
@@ -1382,6 +1453,11 @@
                                         </span>
                                     </div>
                                 </a>
+
+                                <label for="useremail" class="footer__notify">
+                                    Các mẹo hữu ích cung cấp hàng tháng
+                                </label>
+
                                 <form action="" class="footer__newsletter">
                                     <input
                                         type="email"
@@ -1475,25 +1551,33 @@
                                     <!-- Col 1 -->
                                     <div class="col">
                                         <ul class="footer__list">
-                                            <h4 class="footer__title">Pages</h4>
+                                            <h4 class="footer__title">Trang</h4>
                                             <li class="footer__item">
-                                                <a href="" class="footer__link"
-                                                    >Help center</a
+                                                <a
+                                                    href="#!"
+                                                    class="footer__link"
+                                                    >Trang chủ</a
                                                 >
                                             </li>
                                             <li class="footer__item">
-                                                <a href="" class="footer__link"
-                                                    >Account information</a
+                                                <a
+                                                    href="#!"
+                                                    class="footer__link"
+                                                    >Dịch vụ</a
                                                 >
                                             </li>
                                             <li class="footer__item">
-                                                <a href="" class="footer__link"
-                                                    >About</a
+                                                <a
+                                                    href="#!"
+                                                    class="footer__link"
+                                                    >Giới thiệu</a
                                                 >
                                             </li>
                                             <li class="footer__item">
-                                                <a href="" class="footer__link"
-                                                    >Contact us</a
+                                                <a
+                                                    href="#!"
+                                                    class="footer__link"
+                                                    >Liên hệ</a
                                                 >
                                             </li>
                                         </ul>
@@ -1502,26 +1586,34 @@
                                     <div class="col">
                                         <ul class="footer__list">
                                             <h4 class="footer__title">
-                                                About us
+                                                Chúng tôi
                                             </h4>
                                             <li class="footer__item">
-                                                <a href="" class="footer__link"
-                                                    >Help center</a
+                                                <a
+                                                    href="#!"
+                                                    class="footer__link"
+                                                    >Đội ngũ</a
                                                 >
                                             </li>
                                             <li class="footer__item">
-                                                <a href="" class="footer__link"
-                                                    >Account information</a
+                                                <a
+                                                    href="#!"
+                                                    class="footer__link"
+                                                    >Nghề nghiệp</a
                                                 >
                                             </li>
                                             <li class="footer__item">
-                                                <a href="" class="footer__link"
-                                                    >About</a
+                                                <a
+                                                    href="#!"
+                                                    class="footer__link"
+                                                    >Blog</a
                                                 >
                                             </li>
                                             <li class="footer__item">
-                                                <a href="" class="footer__link"
-                                                    >Contact us</a
+                                                <a
+                                                    href="#!"
+                                                    class="footer__link"
+                                                    >Đánh giá</a
                                                 >
                                             </li>
                                         </ul>
@@ -1530,54 +1622,73 @@
                                     <div class="col">
                                         <ul class="footer__list">
                                             <h4 class="footer__title">
-                                                Resources
+                                                Tài nguyên
                                             </h4>
                                             <li class="footer__item">
-                                                <a href="" class="footer__link"
-                                                    >Help center</a
+                                                <a
+                                                    href="#!"
+                                                    class="footer__link"
+                                                >
+                                                    SEO địa phương</a
                                                 >
                                             </li>
                                             <li class="footer__item">
-                                                <a href="" class="footer__link"
-                                                    >Account information</a
+                                                <a
+                                                    href="#!"
+                                                    class="footer__link"
+                                                    >Quảng cáo Google</a
                                                 >
                                             </li>
                                             <li class="footer__item">
-                                                <a href="" class="footer__link"
-                                                    >About</a
+                                                <a
+                                                    href="#!"
+                                                    class="footer__link"
+                                                    >Thiết kế web</a
                                                 >
                                             </li>
                                             <li class="footer__item">
-                                                <a href="" class="footer__link"
-                                                    >Contact us</a
+                                                <a
+                                                    href="#!"
+                                                    class="footer__link"
+                                                    >Xây dựng thương hiệu</a
                                                 >
                                             </li>
                                         </ul>
                                     </div>
-                                    <!-- Col 1 -->
+                                    <!-- Col 4 -->
                                     <div class="col">
                                         <ul class="footer__list">
                                             <h4 class="footer__title">
-                                                Support
+                                                Hỗ trợ
                                             </h4>
                                             <li class="footer__item">
-                                                <a href="" class="footer__link"
-                                                    >Help center</a
+                                                <a
+                                                    href="#!"
+                                                    class="footer__link"
+                                                    >Trung tâm trợ giúp</a
                                                 >
                                             </li>
                                             <li class="footer__item">
-                                                <a href="" class="footer__link"
-                                                    >Account information</a
+                                                <a
+                                                    href="#!"
+                                                    class="footer__link"
+                                                >
+                                                    Thông tin tài khoản</a
                                                 >
                                             </li>
                                             <li class="footer__item">
-                                                <a href="" class="footer__link"
-                                                    >About</a
+                                                <a
+                                                    href="#!"
+                                                    class="footer__link"
+                                                >
+                                                    Động cơ cấy ghép</a
                                                 >
                                             </li>
                                             <li class="footer__item">
-                                                <a href="" class="footer__link"
-                                                    >Contact us</a
+                                                <a
+                                                    href="#!"
+                                                    class="footer__link"
+                                                    >Liên hệ</a
                                                 >
                                             </li>
                                         </ul>
@@ -1606,5 +1717,11 @@
             integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
             crossorigin="anonymous"
         ></script>
+
+        <!-- Aos -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
