@@ -31,9 +31,37 @@ body {
     font-family: "Sora", sans-serif;
 }
 
+/* ========== Animation ========== */
+@keyframes fade-right {
+    from {
+        transform: translateX(200%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-left {
+    from {
+        transform: translateX(-200%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 /* ========== Common ========== */
 a {
     text-decoration: none;
+}
+
+p,
+blockquote {
+    font-family: "Roboto", sans-serif;
 }
 
 button,
@@ -273,6 +301,10 @@ select {
     margin-right: auto;
 }
 
+.navbar {
+    margin-left: auto;
+}
+
 .navbar__list {
     display: flex;
 }
@@ -390,7 +422,7 @@ select {
     }
 }
 
-/* ========== Hero ========== */
+/* ========== Review ========== */
 .review {
     margin: 100px 0;
 }
@@ -477,17 +509,20 @@ select {
     padding: 60px 0 0;
     background-color: #24287f;
     overflow: hidden;
-    background-image: url(../icons/hero-decor.svg);
+    /* background-image: url(../icons/hero-decor.svg); */
+    background-image: url(../imgs/hero-img-05.jpeg);
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position-y: 10%;
+    background-position-x: 100%;
+    /* background-position-y: 10%; */
 }
-
+/* 
 .hero::after {
     position: absolute;
     content: url(../icons/hero-decor-02.svg);
     bottom: -7px;
     right: 94px;
-}
+} */
 
 .hero__row {
     align-items: flex-end;
@@ -495,6 +530,7 @@ select {
 
 .hero__col-nd {
     align-self: flex-start;
+    animation: fade-left ease-out 0.8s;
 }
 
 .hero__content {
@@ -504,6 +540,10 @@ select {
 
 .hero-decor__img {
     display: block;
+}
+
+.hero__media {
+    animation: fade-right ease-out 0.8s;
 }
 
 .hero__img-wrap {

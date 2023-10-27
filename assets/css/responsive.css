@@ -163,10 +163,6 @@
         background-position-y: 100%;
     }
 
-    .hero__media {
-        order: 2;
-    }
-
     .review__media {
         display: flex;
         justify-content: center;
@@ -296,6 +292,7 @@
     }
 
     .hero {
+        background-position-y: 140%;
         background-size: 150%;
         background-position-x: 40%;
     }
