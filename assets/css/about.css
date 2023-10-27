@@ -1,5 +1,5 @@
 .wrapper {
-    max-width: 1200px;
+    max-width: 960px;
     margin: 0 auto;
 }
 .main-content {
@@ -21,18 +21,18 @@
     height: 68rem;
 }
 .img2 {
-    width: 550px;
+    width: 400px;
     height: 366px;
 }
 .p-content {
     color: black;
     font-family: Poppins;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-style: normal;
     font-weight: 500;
     line-height: 3rem; /* 187.5% */
-    width: 65rem;
-    padding-top: 1.5rem;
+    width: 550px;
+    padding-top: 1rem;
 }
 .container {
     display: flex;
@@ -46,23 +46,23 @@
 h1 {
     color: cornflowerblue;
     font-family: Poppins;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 900;
     line-height: 3.875rem;
-    width: 50rem;
+    width: 55rem;
 }
 .h1-style {
     color: cornflowerblue;
     font-family: Poppins;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-style: normal;
     width: 100rem;
 }
 h2 {
     color: cornflowerblue;
     font-family: Poppins;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 900;
     line-height: 3.875rem;
@@ -71,7 +71,7 @@ h2 {
 h4 {
     color: chartreuse;
     font-family: Poppins;
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 900;
     line-height: 3.875rem;
@@ -79,7 +79,7 @@ h4 {
 }
 .p-style {
     color: #48496a;
-    font-size: 2.5rem;
+    font-size: 1.7rem;
     font-family: Poppins;
     font-weight: 500;
     line-height: 18px;
@@ -89,18 +89,18 @@ h4 {
 }
 .p-style3 {
     color: #48496a;
-    font-size: 2rem;
+    font-size: 17.5px;
     color: black;
     font-family: Poppins;
     font-weight: 500;
     line-height: 25px;
     word-wrap: break-word;
     padding-top: 30px;
-    width: 30rem;
+    width: 250px;
 }
 .p-style-content {
     color: deepskyblue;
-    font-size: 3rem;
+    font-size: 1.7rem;
     font-family: Poppins;
     font-weight: 500;
     line-height: 18px;
@@ -110,14 +110,14 @@ h4 {
 }
 .p-style1 {
     color: #48496a;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-family: Poppins;
     font-weight: 500;
     line-height: 25px;
     word-wrap: break-word;
     padding-top: 30px;
-    padding-left: 50px;
-    width: 30rem;
+    padding-left: 30px;
+    width: 250px;
     color: black;
 }
 table {
@@ -132,13 +132,13 @@ td {
     text-align: center;
     color: black;
     font-family: Poppins;
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 th {
     border: 1px solid blue;
     text-align: center;
     color: black;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-family: Poppins;
     background-color: blue;
     color: white;
@@ -146,7 +146,7 @@ th {
 li {
     font-family: Poppins;
     color: black;
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 /* Iphone 12 Pro */
 @media screen and (max-width: 390px) {
@@ -219,6 +219,11 @@ li {
         width: 100%;
         height: 366px;
     }
+    li {
+        font-family: Poppins;
+        color: black;
+        font-size: 2.2rem;
+    }
 }
 /* Ipad Mini */
 @media screen and (max-width: 768px) {
@@ -229,7 +234,7 @@ li {
     .p-content {
         color: #656689;
         font-family: Poppins;
-        font-size: 2rem;
+        font-size: 2.2rem;
         font-style: normal;
         font-weight: 500;
         line-height: 3rem; /* 187.5% */
@@ -267,7 +272,7 @@ li {
     }
     .p-style1 {
         color: #48496a;
-        font-size: 2rem;
+        font-size: 2.2rem;
         font-family: Poppins;
         font-weight: 500;
         line-height: 25px;
@@ -278,7 +283,7 @@ li {
     }
     .p-style3 {
         color: #48496a;
-        font-size: 2rem;
+        font-size: 2.2rem;
         color: black;
         font-family: Poppins;
         font-weight: 500;
@@ -291,5 +296,10 @@ li {
     .img2 {
         width: 100%;
         height: 366px;
+    }
+    li {
+        font-family: Poppins;
+        color: black;
+        font-size: 2.2rem;
     }
 }
