@@ -78,7 +78,7 @@ h4 {
     width: 50rem;
 }
 .p-style {
-    color: #48496a;
+    color: black;
     font-size: 1.7rem;
     font-family: Poppins;
     font-weight: 500;
@@ -88,9 +88,9 @@ h4 {
     width: 30rem;
 }
 .p-style3 {
-    color: #48496a;
-    font-size: 1.7rem;
     color: black;
+    font-size: 1.55rem;
+    font-family: Poppins;
     font-weight: 500;
     line-height: 25px;
     word-wrap: break-word;
@@ -109,8 +109,8 @@ h4 {
     width: 18rem;
 }
 .p-style1 {
-    color: #48496a;
-    font-size: 1.7rem;
+    color: black;
+    font-size: 1.55rem;
     font-family: Poppins;
     font-weight: 500;
     line-height: 25px;
@@ -118,7 +118,6 @@ h4 {
     padding-top: 30px;
     padding-left: 30px;
     width: 250px;
-    color: black;
 }
 table {
     border: 1px solid blue;
@@ -136,7 +135,6 @@ td {
 th {
     border: 1px solid blue;
     text-align: center;
-    color: black;
     font-size: 1.7rem;;
     font-family: Poppins;
     background-color: blue;
@@ -154,8 +152,8 @@ li {
         padding-top: 4rem;
     }
     .p-content {
-        color: #656689;
-
+        color: black;
+        font-family: Poppins;
         font-size: 2rem;
         font-style: normal;
         font-weight: 500;
@@ -165,14 +163,14 @@ li {
     }
     .h1-style {
         color: cornflowerblue;
-
+        font-family: Poppins;
         font-size: 2.5rem;
         font-style: normal;
         width: 100%;
     }
     h1 {
         color: cornflowerblue;
-
+        font-family: Poppins;
         font-size: 2.5rem;
         font-style: normal;
         font-weight: 900;
@@ -183,9 +181,9 @@ li {
         display: block;
     }
     .p-style {
-        color: #48496a;
+        color: black;
         font-size: 2.5rem;
-
+        font-family: Poppins;
         font-weight: 500;
         line-height: 18px;
         word-wrap: break-word;
@@ -193,9 +191,9 @@ li {
         width: 30rem;
     }
     .p-style1 {
-        color: #48496a;
-        font-size: 2rem;
-
+        color: black;
+        font-size: 1.9rem;
+        font-family: Poppins;
         font-weight: 500;
         line-height: 25px;
         word-wrap: break-word;
@@ -204,10 +202,9 @@ li {
         width: 30rem;
     }
     .p-style3 {
-        color: #48496a;
-        font-size: 2rem;
         color: black;
-
+        font-size: 1.9rem;
+        font-family: Poppins;
         font-weight: 500;
         line-height: 25px;
         word-wrap: break-word;
@@ -231,9 +228,9 @@ li {
         padding-top: 4rem;
     }
     .p-content {
-        color: #656689;
+        color: black;
         font-family: Poppins;
-        font-size: 2rem;
+        font-size: 2.2rem;
         font-style: normal;
         font-weight: 500;
         line-height: 3rem; /* 187.5% */
@@ -242,14 +239,14 @@ li {
     }
     .h1-style {
         color: cornflowerblue;
-
+        font-family: Poppins;
         font-size: 2.5rem;
         font-style: normal;
         width: 100%;
     }
     h1 {
         color: cornflowerblue;
-
+        font-family: Poppins;
         font-size: 2.5rem;
         font-style: normal;
         font-weight: 900;
@@ -260,9 +257,9 @@ li {
         display: block;
     }
     .p-style {
-        color: #48496a;
+        color: black;
         font-size: 2.5rem;
-
+        font-family: Poppins;
         font-weight: 500;
         line-height: 18px;
         word-wrap: break-word;
@@ -270,8 +267,8 @@ li {
         width: 30rem;
     }
     .p-style1 {
-        color: #48496a;
-        font-size: 2rem;
+        color: black;
+        font-size: 1.9rem;
         font-family: Poppins;
         font-weight: 500;
         line-height: 25px;
@@ -281,10 +278,9 @@ li {
         width: 30rem;
     }
     .p-style3 {
-        color: #48496a;
-        font-size: 2.2rem;
         color: black;
-
+        font-size: 1.9rem;
+        font-family: Poppins;
         font-weight: 500;
         line-height: 25px;
         word-wrap: break-word;
