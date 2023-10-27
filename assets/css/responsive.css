@@ -264,8 +264,8 @@
         height: auto;
         background-image: linear-gradient(
             to bottom,
-            var(--color-bg-primary) 36%,
-            var(--card-color) 36%
+            var(--color-bg-primary) 36.5%,
+            var(--card-color) 36.5%
         );
     }
 

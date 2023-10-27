@@ -108,6 +108,12 @@
         <!-- Styles -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
         <link rel="stylesheet" href="./assets/css/responsive.css" />
+
+        <!-- Animation -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <!-- PC Header -->
@@ -397,8 +403,8 @@
                                     <a href="#!" class="btn hero-cta__btn"
                                         ><span
                                             class="text-effect"
-                                            data-text="Đặt lịch trực tiếp"
-                                            >Đặt lịch trực tiếp</span
+                                            data-text="Đặt lịch hẹn"
+                                            >Đặt lịch hẹn</span
                                         ></a
                                     >
 
@@ -428,10 +434,10 @@
                 <div class="review__inner">
                     <div class="row">
                         <div class="col col-lg-12">
-                            <!-- data-bs-ride="carousel" -->
                             <div
                                 id="carouselExampleIndicators"
                                 class="carousel slide"
+                                data-bs-ride="carousel"
                             >
                                 <div
                                     class="carousel-indicators review__carousel"
@@ -1713,5 +1719,11 @@
             integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
             crossorigin="anonymous"
         ></script>
+
+        <!-- Aos -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
