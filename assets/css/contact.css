@@ -84,7 +84,7 @@ h3{
 }
 
 .image{
-    flex-basis: 44%;
+    /* flex-basis: 44%; */
     padding-top: 20rem;
 }
 
