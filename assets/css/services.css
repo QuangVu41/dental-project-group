@@ -1,10 +1,16 @@
 /* Main service */
 .main-services {
-    padding: 100px;
+    padding: 100px 0;
+}
+
+.main-services .container {
+    width: 1330px;
 }
 
 .main-services-top {
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .main-services-title {
@@ -43,7 +49,6 @@
     font-size: 2.6rem;
     font-weight: 600;
     line-height: 1.25; /* 125% */
-    letter-spacing: -1.28px;
 }
 
 .main-services-desc {

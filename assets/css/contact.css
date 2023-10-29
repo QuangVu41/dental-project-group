@@ -1,31 +1,31 @@
-.backgroundColor{
+.backgroundColor {
     width: 100%;
     height: 270rem;
     background-color: #24287f;
     margin: 0rem auto;
 }
 
-.gridView1{
+.gridView1 {
     display: grid;
     grid-template-columns: 60% auto;
 }
 
-.first-content{
+.first-content {
     display: flex;
     padding-top: 20rem;
 }
 
-.content{
+.content {
     flex-basis: 56%;
 }
 
-.secondary-content{
-    padding-left: 15rem; 
-    display: flex; 
+.secondary-content {
+    padding-left: 15rem;
+    display: flex;
     width: 100%;
 }
 
-p{
+p {
     display: flex;
     padding-left: 15rem;
     padding-top: 5rem;
@@ -38,7 +38,7 @@ p{
     line-height: 30px;
 }
 
-h1{
+h1 {
     padding-left: 15rem;
     width: 130%;
     color: white;
@@ -46,10 +46,10 @@ h1{
     font-family: Sora;
     font-weight: 600;
     line-height: 80px;
-    word-wrap: break-word
+    word-wrap: break-word;
 }
 
-h3{
+h3 {
     text-align: center;
     width: 100%;
     color: white;
@@ -57,25 +57,25 @@ h3{
     font-family: Sora;
     font-weight: 600;
     line-height: 80px;
-    word-wrap: break-word
+    word-wrap: break-word;
 }
 
-.bookOnline{
+.bookOnline {
     display: flex;
-    background: #2E80CE;
+    background: #2e80ce;
     border-radius: 30px;
     height: 5rem;
     width: 16rem;
-    color: #C9D2DA;
+    color: #c9d2da;
     font-size: 15px;
     align-items: center;
     padding-left: 30px;
 }
 
-.content2{
+.content2 {
     display: flex;
     padding-left: 5rem;
-    color: #C9D2DA;
+    color: #c9d2da;
     font-family: Sora;
     font-size: 25px;
     font-style: normal;
@@ -83,63 +83,66 @@ h3{
     line-height: 50px;
 }
 
-.image{
+
+
+.image {
+
     /* flex-basis: 44%; */
     padding-top: 20rem;
 }
 
-.image1{
-    width: 50%; 
-    height: 100%; 
-    border-radius: 6px
+.image1 {
+    width: 50%;
+    height: 100%;
+    border-radius: 6px;
 }
 
-.image2{
-    width: 40%; 
-    height: 80%; 
-    border-radius: 1px; 
+.image2 {
+    width: 40%;
+    height: 80%;
+    border-radius: 1px;
 }
 
-.girdView2{
+.girdView2 {
     display: grid;
     grid-template-columns: 25% 25% 25% auto;
     padding-top: 10rem;
 }
 
-.imageDentis{
+.imageDentis {
     margin-left: 4rem;
-    width: 30rem; 
-    height: 40rem; 
+    width: 30rem;
+    height: 40rem;
     border-radius: 6px;
     background-color: white;
 }
 
-.dentisName{
-    text-align: center; 
-    color: whitesmoke; 
-    font-size: 16px; 
-    font-family: Sora; 
-    font-weight: 400; 
-    line-height: 28px; 
-    word-wrap: break-word
+.dentisName {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 16px;
+    font-family: Sora;
+    font-weight: 400;
+    line-height: 28px;
+    word-wrap: break-word;
 }
 
-.dentisContent{
-    text-align: center; 
-    color: #575F66; 
-    font-size: 14px; 
-    font-family: Sora; 
-    font-weight: 300; 
-    line-height: 26px; 
-    word-wrap: break-word
+.dentisContent {
+    text-align: center;
+    color: #575f66;
+    font-size: 14px;
+    font-family: Sora;
+    font-weight: 300;
+    line-height: 26px;
+    word-wrap: break-word;
 }
 
 /* table */
-.divTable{
+.divTable {
     padding-top: 10rem;
 }
 
-table{
+table {
     color: white;
     text-align: center;
     border: 1px solid rgb(133, 129, 129);
@@ -149,7 +152,7 @@ table{
     margin-left: 4rem;
 }
 
-.td1{
+.td1 {
     width: 10%;
     color: white;
     text-align: center;
@@ -157,21 +160,21 @@ table{
     border-collapse: collapse;
 }
 
-.td2{
+.td2 {
     width: 10%;
     color: white;
     text-align: center;
     border: 1px solid rgb(133, 129, 129);
     border-collapse: collapse;
 }
-.td3{
+.td3 {
     width: 30%;
     color: white;
     text-align: center;
     border: 1px solid rgb(133, 129, 129);
     border-collapse: collapse;
 }
-.td4{
+.td4 {
     width: 40%;
     color: white;
     text-align: center;
@@ -180,18 +183,17 @@ table{
 }
 
 /* form */
-.Form{
+.Form {
     padding-top: 20rem;
 }
 
-.itemForm{
+.itemForm {
     margin-top: 5rem;
     padding-left: 10rem;
     padding-right: 10rem;
 }
 
-
-h2{
+h2 {
     text-align: center;
     width: 100%;
     color: white;
@@ -199,69 +201,67 @@ h2{
     font-family: Sora;
     font-weight: 600;
     line-height: 80px;
-    word-wrap: break-word
-}
-
-.textForm{
-    color: white;
-    font-family: Sora;   
     word-wrap: break-word;
 }
 
-.buttonForm{
+.textForm {
+    color: white;
+    font-family: Sora;
+    word-wrap: break-word;
+}
+
+.buttonForm {
     margin-left: 50rem;
     width: 10rem;
     height: 4rem;
 }
 
-a{
+a {
     font-family: Sora;
     color: white;
 }
 
 /* Ipad mini  */
-@media screen and (max-width: 768px ) {
-    .backgroundColor{
+@media screen and (max-width: 768px) {
+    .backgroundColor {
         width: 768px;
         height: auto;
-        background-color: #10375C;
         margin: 0rem auto;
     }
-    .gridView1{
+    .gridView1 {
         display: flex;
         width: 768px;
     }
-    
-    .main-content{
+
+    .main-content {
         display: flex;
         padding-top: 15rem;
         width: 100%;
     }
-    
-    .content{
 
+    .content {
     }
 
-    .secondary-content{
-        padding-left: 2rem; 
-        display: flex; 
+    .secondary-content {
+        padding-left: 2rem;
+        display: flex;
         width: 100%;
     }
-    
-    p{
+
+    p {
         display: flex;
         padding-left: 2rem;
         padding-top: 5rem;
         padding-bottom: 5rem;
-        color: #C9D2DA;
+        color: #c9d2da;
         font-family: Sora;
         font-size: 25px;
         font-style: normal;
         font-weight: 300;
         line-height: 30px;
     }
-    
-    h1{
+
+    h1 {
         padding-left: 2rem;
         width: 130%;
         color: white;
@@ -269,10 +269,10 @@ a{
         font-family: Sora;
         font-weight: 600;
         line-height: 80px;
-        word-wrap: break-word
+        word-wrap: break-word;
     }
 
-    h2{
+    h2 {
         text-align: center;
         width: 100%;
         color: white;
@@ -284,10 +284,10 @@ a{
         margin-left: 10rem;
     }
 
-    .content2{
+    .content2 {
         display: flex;
         padding-left: 5rem;
-        color: #C9D2DA;
+        color: #c9d2da;
         font-family: Sora;
         font-size: 25px;
         font-style: normal;
@@ -295,33 +295,31 @@ a{
         line-height: 50px;
     }
 
-    .image{
+    .image {
         padding-top: 5rem;
         display: none;
     }
 
-    
-
-    .dentisContent{
-        text-align: center; 
-        color: #575F66; 
-        font-size: 14px; 
-        font-family: Sora; 
-        font-weight: 300; 
-        line-height: 26px; 
+    .dentisContent {
+        text-align: center;
+        color: #575f66;
+        font-size: 14px;
+        font-family: Sora;
+        font-weight: 300;
+        line-height: 26px;
         word-wrap: break-word;
         margin-bottom: 4rem;
     }
-    
-    .girdView2{
+
+    .girdView2 {
         display: grid;
         grid-template-columns: 100%;
         padding-top: 10rem;
     }
-    
-    .imageDentis{
+
+    .imageDentis {
         display: grid;
-        width: 100%; 
+        width: 100%;
         height: 80rem;
         border-radius: 6px;
         background-color: white;
@@ -329,12 +327,12 @@ a{
     }
 
     /* table */
-    .divTable{
+    .divTable {
         padding-top: 5rem;
         margin-right: 20rem;
     }
-    
-    table{
+
+    table {
         color: white;
         text-align: center;
         border: 1px solid rgb(133, 129, 129);
@@ -342,16 +340,15 @@ a{
         width: 120%;
         height: 100%;
         margin-left: 2rem;
-        
     }
 
     /* form */
-    .Form{
+    .Form {
         padding-top: 20rem;
         width: 390px;
     }
 
-    h3{
+    h3 {
         text-align: center;
         width: 250%;
         color: white;
@@ -363,65 +360,62 @@ a{
         margin-left: -5rem;
     }
 
-    .itemForm{
+    .itemForm {
         margin-top: 5rem;
         padding-left: 10rem;
         padding-right: 10rem;
         width: 200%;
     }
-    
-    .buttonForm{
+
+    .buttonForm {
         margin-left: 15rem;
         width: 10rem;
         height: 4rem;
     }
 }
 
-
-
 /* Iphone12 Pro  */
 @media screen and (max-width: 391px) {
-    .backgroundColor{
+    .backgroundColor {
         width: 390px;
         height: auto;
-        background-color: #10375C;
+        background-color: #10375c;
         margin: 0rem auto;
     }
-    .gridView1{
+    .gridView1 {
         display: flex;
         width: 390px;
     }
-    
-    .main-content{
+
+    .main-content {
         display: flex;
         padding-top: 15rem;
         width: 100%;
     }
-    
-    .content{
-        
+
+    .content {
     }
 
-    .secondary-content{
-        padding-left: 2rem; 
-        display: flex; 
+    .secondary-content {
+        padding-left: 2rem;
+        display: flex;
         width: 100%;
     }
-    
-    p{
+
+    p {
         display: flex;
         padding-left: 2rem;
         padding-top: 5rem;
         padding-bottom: 5rem;
-        color: #C9D2DA;
+        color: #c9d2da;
         font-family: Sora;
         font-size: 25px;
         font-style: normal;
         font-weight: 300;
         line-height: 30px;
     }
-    
-    h1{
+
+    h1 {
         padding-left: 2rem;
         width: 130%;
         color: white;
@@ -429,10 +423,10 @@ a{
         font-family: Sora;
         font-weight: 600;
         line-height: 80px;
-        word-wrap: break-word
+        word-wrap: break-word;
     }
 
-    h2{
+    h2 {
         text-align: center;
         width: 75%;
         color: white;
@@ -444,10 +438,10 @@ a{
         margin-left: 3rem;
     }
 
-    .content2{
+    .content2 {
         display: flex;
         padding-left: 5rem;
-        color: #C9D2DA;
+        color: #c9d2da;
         font-family: Sora;
         font-size: 25px;
         font-style: normal;
@@ -455,18 +449,18 @@ a{
         line-height: 50px;
     }
 
-    .image{
+    .image {
         padding-top: 5rem;
         display: none;
     }
-    
-    .girdView2{
+
+    .girdView2 {
         display: grid;
         grid-template-columns: 100%;
         padding-top: 10rem;
     }
 
-    h3{
+    h3 {
         text-align: center;
         width: 120%;
         color: white;
@@ -474,34 +468,33 @@ a{
         font-family: Sora;
         font-weight: 600;
         line-height: 80px;
-        word-wrap: break-word
+        word-wrap: break-word;
     }
-    
-    
-    .imageDentis{
+
+    .imageDentis {
         display: grid;
-        width: 100%; 
+        width: 100%;
         border-radius: 6px;
         background-color: white;
         margin-left: 0rem;
     }
 
-    .dentisContent{
-        text-align: center; 
-        color: #575F66; 
-        font-size: 14px; 
-        font-family: Sora; 
-        font-weight: 300; 
-        line-height: 26px; 
-        word-wrap: break-word
+    .dentisContent {
+        text-align: center;
+        color: #575f66;
+        font-size: 14px;
+        font-family: Sora;
+        font-weight: 300;
+        line-height: 26px;
+        word-wrap: break-word;
     }
 
     /* table */
-    .divTable{
+    .divTable {
         padding-top: 5rem;
     }
-    
-    table{
+
+    table {
         color: white;
         text-align: center;
         border: 1px solid rgb(133, 129, 129);
@@ -512,21 +505,20 @@ a{
     }
 
     /* form */
-    .Form{
+    .Form {
         padding-top: 20rem;
         width: 390px;
     }
-    .itemForm{
+    .itemForm {
         margin-top: 5rem;
         padding-left: 10rem;
         padding-right: 10rem;
         width: 100%;
     }
-    
-    .buttonForm{
+
+    .buttonForm {
         margin-left: 15rem;
         width: 10rem;
         height: 4rem;
     }
 }
-
